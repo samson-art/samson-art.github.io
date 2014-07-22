@@ -88,7 +88,7 @@ Game.prototype.check_end = function(){
     if (m[0][0] && m[0][1] && m[0][2] && m[1][0] && m[1][1] && m[1][2] && m[2][0] && m[2][1] && m[2][2]) return 'Ничья';
 };
 Game.prototype.update_scope = function(){
-    this.scope_div.innerHTML = this.scope[0] + ' : ' + this.scope[1];
+    this.scope_div.innerText = this.scope[0] + ' : ' + this.scope[1];
 };
 //Canvas
 function Canvas(id){
