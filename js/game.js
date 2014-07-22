@@ -20,7 +20,7 @@ function Game(id){
     this.gen_matrix();
 
     this.scope = [0, 0];
-    this.scope_div = document.getElementById('scope_div');
+    this.scope_div = document.getElementById('scope');
     this.update_scope();
 
     this.btn_restart.onclick = function(){
