@@ -9,7 +9,7 @@
 			window.onload = function() {
                 VK.init(function(){
                     var game = new Game('game_area');
-                    VK.callMethod("resizeWindow", document.documentElement.clientWidth, document.documentElement.clientHeight);
+                    VK.callMethod("resizeWindow", document.documentElement.scrollWidth, document.documentElement.scrollHeight);
                 })
 
             }
