@@ -7,9 +7,7 @@ var _step = _w_h/_size;
 function Game(id){
     this.element = document.getElementById(id);
     this.button_html = '<canvas id="gameCanvas">Игровое поле</canvas>' +
-        '<form>' +
-        '<button id="restart">Restart</button>' +
-        '</form>';
+        '<button id="restart">Restart</button>';
     this.element.innerHTML = this.button_html;
 
     this.canvas = new Canvas('gameCanvas');
