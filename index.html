@@ -9,7 +9,7 @@
 		<script>
 			window.onload = function() {
                 VK.init(function(){
-                    VK.callMethod('showInstallBox');
+                    VK.callMethod('showInstallBox()');
                     var game = new Game('game_area');
                     VK.callMethod("resizeWindow", document.documentElement.scrollWidth, document.documentElement.scrollHeight);
                     VK.api("photos.get", function(data) {
