@@ -12,10 +12,7 @@
                     VK.callMethod('showInstallBox');
                     var game = new Game('game_area');
                     VK.callMethod("resizeWindow", document.documentElement.scrollWidth, document.documentElement.scrollHeight);
-                    VK.api("users.get", function(data) {
-                        var photo_div = document.getElementById('user_photo');
-                        photo_div.innerHTML = "<img src="+data.response.photo_100+">";
-                    });
+                    doIt();
 
                 })
 
