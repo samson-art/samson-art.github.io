@@ -25,7 +25,6 @@ function Game(id){
 
     this.btn_restart.onclick = function(){
         this.gen_matrix();
-        this.update_scope();
         this.canvas.clear_canvas(this.matrix);
     }.bind(this);
 
@@ -46,6 +45,7 @@ function Game(id){
             else if (str == 'Проигрыш') this.scope[1]++;
             alert(str);
             this.gen_matrix();
+            this.update_scope();
         }
     }.bind(this);
 }
