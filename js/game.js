@@ -36,7 +36,7 @@ function Game(id){
             alert(str);
             this.gen_matrix();
             this.update_scope();
-            this.canvas.clear_canvas(this.matrix);
+            this.canvas.clear_canvas();
         }
     }.bind(this);
 }
@@ -101,12 +101,10 @@ function Canvas(id){
     }
 
 }
-Canvas.prototype.clear_canvas = function(matrix){
+Canvas.prototype.clear_canvas = function(){
     for (var i = 0; i<_size; i++) {
         for (var j = 0; j < _size; j++) {
-            if (matrix[j][i]){
                 this.fillRect(j, i, 'white');
-            }
         }
     }
 };
