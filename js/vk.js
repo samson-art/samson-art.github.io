@@ -5,7 +5,7 @@ function doIt(){
         });
         */
 
-    VK.api("users.get", function(data) {
+    VK.api("users.get", {fields: "photo_100"},function(data) {
                         var photo_div = document.getElementById('user_photo');
                         photo_div.innerHTML = "<img src="+data.response[0].photo_100+">";
     });
