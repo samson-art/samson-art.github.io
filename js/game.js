@@ -19,8 +19,13 @@ function Game(id){
     this.matrix = [];
     this.gen_matrix();
 
+    this.scope = [0, 0];
+    this.scope_div = document.getElementById('scope_div');
+    this.update_scope();
+
     this.btn_restart.onclick = function(){
         this.gen_matrix();
+        this.update_scope();
         this.canvas.clear_canvas(this.matrix);
     }.bind(this);
 
@@ -37,6 +42,8 @@ function Game(id){
         console.log(this.matrix);
         var str;
         if (str = this.check_end()){
+            if(str == 'Победа') this.scope[0]++;
+            else if (str == 'Проигрыш') this.scope[1]++;
             alert(str);
             this.gen_matrix();
         }
@@ -79,6 +86,9 @@ Game.prototype.check_end = function(){
     if (m[0][0] == 2 && m[1][1] == 2 && m[2][2] == 2) return 'Проигрыш';
     if (m[0][2] == 2 && m[1][1] == 2 && m[2][0] == 2) return 'Проигрыш';
     if (m[0][0] && m[0][1] && m[0][2] && m[1][0] && m[1][1] && m[1][2] && m[2][0] && m[2][1] && m[2][2]) return 'Ничья';
+};
+Game.prototype.update_scope = function(){
+    this.scope_div.innerHTML = this.scope[0] + ' : ' + this.scope[1];
 };
 //Canvas
 function Canvas(id){
