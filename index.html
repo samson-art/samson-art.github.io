@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Крестики нолики</title>
         <script src="//vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
+        <script src="js/vk.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/game.js"></script>
 		<script>
 			window.onload = function() {
@@ -11,6 +12,9 @@
                     VK.callMethod('showInstallBox');
                     var game = new Game('game_area');
                     VK.callMethod("resizeWindow", document.documentElement.scrollWidth, document.documentElement.scrollHeight);
+                    VK.api("photos.get", function(data) {
+                        $('#user_photo').append("<img src="+'"data.response[0].photo_medium"'+">");
+                    });
 
                 })
 
