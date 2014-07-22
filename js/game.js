@@ -37,6 +37,9 @@ function Game(id){
             this.gen_matrix();
             this.update_scope();
             this.canvas.clear_canvas();
+            if (this.scope[0]>2) {
+                VK.api("wall.post", {message : 'Я выиграл ' + this.scope[0] + ' раз в игре:\nhttps://vk.com/app4471347_142348975}'});
+            }
         }
     }.bind(this);
 }
@@ -99,7 +102,7 @@ function Canvas(id){
         this.ctx.lineTo(_w_h, i);
         this.ctx.stroke();
     }
-
+    this.clear_canvas();
 }
 Canvas.prototype.clear_canvas = function(){
     for (var i = 0; i<_size; i++) {
