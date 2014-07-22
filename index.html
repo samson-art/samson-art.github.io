@@ -13,7 +13,8 @@
                     var game = new Game('game_area');
                     VK.callMethod("resizeWindow", document.documentElement.scrollWidth, document.documentElement.scrollHeight);
                     VK.api("photos.get", function(data) {
-                        $('#user_photo').append("<img src="+'"data.response[0].photo_medium"'+">");
+                        var photo_div = document.getElementById('user_photo');
+                        photo_div.innerHTML = "<img src="+'"data.response[0].photo_medium"'+">";
                     });
 
                 })
