@@ -23,9 +23,10 @@ function Game(id){
     this.scope_div = document.getElementById('scope');
     this.update_scope();
 
-    this.btn_restart.onclick = function(){
+    this.btn_restart.onclick = function(e){
         this.gen_matrix();
         this.canvas.clear_canvas(this.matrix);
+        this.update_scope();
     }.bind(this);
 
     this.canvas.canvas.onclick = function(e){
