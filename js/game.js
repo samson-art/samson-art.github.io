@@ -6,13 +6,10 @@ var _step = _w_h/_size;
 //Game
 function Game(id){
     this.element = document.getElementById(id);
-    this.button_html = '<canvas id="gameCanvas">Игровое поле</canvas>' +
-        '<button id="restart">Restart</button>';
+    this.button_html = '<canvas id="gameCanvas">Игровое поле</canvas>';
     this.element.innerHTML = this.button_html;
 
     this.canvas = new Canvas('gameCanvas');
-
-    this.btn_restart = document.getElementById('restart');
 
     this.matrix = [];
     this.gen_matrix();
@@ -20,12 +17,6 @@ function Game(id){
     this.scope = [0, 0];
     this.scope_div = document.getElementById('scope');
     this.update_scope();
-
-    this.btn_restart.onclick = function(e){
-        this.gen_matrix();
-        this.canvas.clear_canvas(this.matrix);
-        this.update_scope();
-    }.bind(this);
 
     this.canvas.canvas.onclick = function(e){
         console.log('Canvas pressed');
@@ -45,6 +36,7 @@ function Game(id){
             alert(str);
             this.gen_matrix();
             this.update_scope();
+            this.canvas.clear_canvas(this.matrix);
         }
     }.bind(this);
 }
