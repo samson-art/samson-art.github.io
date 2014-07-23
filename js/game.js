@@ -17,7 +17,12 @@ function Game(id){
     this.scope = [0, 0];
     this.scope_div = document.getElementById('scope');
     this.update_scope();
-
+    this.check_timer = setInterval(function(){
+        if (this.str = this.check_end()) {
+            this.end_game();
+            return;
+        }
+    }.bind(this), 250);
     this.canvas.canvas.onclick = function(e){
         console.log('Canvas pressed');
         var relativeX = (e.pageX - this.canvas.canvas.offsetLeft);
@@ -28,18 +33,16 @@ function Game(id){
         this.matrix[i][j] = 1;
         console.log(this.matrix);
         this.opponent_move();
-        console.log(this.matrix);
-        var str;
-        if (str = this.check_end()){
-            if(str == 'Победа') this.scope[0]++;
-            else if (str == 'Проигрыш') this.scope[1]++;
-            alert(str);
-            this.gen_matrix();
-            this.update_scope();
-            this.canvas.clear_canvas();
-            if (this.scope[0]>2) {
-                VK.api("wall.post", {message : 'Я выиграл ' + this.scope[0] + ' раз в игре:\nhttps://vk.com/app4471347_142348975}'});
-            }
+    }.bind(this);
+    this.end_game = function(){
+        if(this.str == 'Победа') this.scope[0]++;
+        else if (this.str == 'Проигрыш') this.scope[1]++;
+        alert(this.str);
+        this.gen_matrix();
+        this.update_scope();
+        this.canvas.clear_canvas();
+        if (this.scope[0]>2) {
+            VK.api("wall.post", {message : 'Я выиграл ' + this.scope[0] + ' раз в игре:\nhttps://vk.com/app4471347_142348975}'});
         }
     }.bind(this);
 }
