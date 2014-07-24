@@ -21,22 +21,24 @@ function Game(id){
     this.message_div = document.getElementById('message');
 
     this.canvas.canvas.onclick = function(e){
-        var relativeX = (e.pageX - this.canvas.canvas.offsetLeft);
-        var relativeY = (e.pageY - this.canvas.canvas.offsetTop);
-        var i = relativeX/_step | 0;
-        var j = relativeY/_step | 0;
-        this.canvas.fillRect(j, i);
-        this.matrix[i][j] = 1;
-        if (this.str = this.check_end()) {
-            this.end_game();
-            this.update_scope();
-            return;
-        }
-        this.opponent_move();
-        if (this.str = this.check_end()) {
-            this.end_game();
-            this.update_scope();
-            return;
+        if (!this.message_div.innerHTML) {
+            var relativeX = (e.pageX - this.canvas.canvas.offsetLeft);
+            var relativeY = (e.pageY - this.canvas.canvas.offsetTop);
+            var i = relativeX / _step | 0;
+            var j = relativeY / _step | 0;
+            this.canvas.fillRect(j, i);
+            this.matrix[i][j] = 1;
+            if (this.str = this.check_end()) {
+                this.end_game();
+                this.update_scope();
+                return;
+            }
+            this.opponent_move();
+            if (this.str = this.check_end()) {
+                this.end_game();
+                this.update_scope();
+                return;
+            }
         }
     }.bind(this);
     this.end_game = function(){
