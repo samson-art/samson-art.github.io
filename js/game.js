@@ -26,17 +26,19 @@ function Game(id){
             var relativeY = (e.pageY - this.canvas.canvas.offsetTop);
             var i = relativeX / _step | 0;
             var j = relativeY / _step | 0;
-            this.canvas.fillRect(j, i);
-            this.matrix[i][j] = 1;
-            if (this.str = this.check_end()) {
-                this.end_game();
-                this.update_scope();
-                return;
-            }
-            Math.random() >= 0.05 ? this.opponent_move2() : this.opponent_move();
-            if (this.str = this.check_end()) {
-                this.end_game();
-                this.update_scope();
+            if (!this.matrix[i][j]) {
+                this.canvas.fillRect(j, i);
+                this.matrix[i][j] = 1;
+                if (this.str = this.check_end()) {
+                    this.end_game();
+                    this.update_scope();
+                    return;
+                }
+                Math.random() >= 0.05 ? this.opponent_move2() : this.opponent_move();
+                if (this.str = this.check_end()) {
+                    this.end_game();
+                    this.update_scope();
+                }
             }
         }
     }.bind(this);
