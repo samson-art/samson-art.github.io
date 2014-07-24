@@ -23,7 +23,7 @@ function create_img(user) {
     }.bind(VK);
     img.src = user.photo_100;
     img.title = user.first_name + ' ' + user.last_name;
-    img.className = 'friends';
+    img.className = 'photo';
     document.getElementById('friends').appendChild(img);
     img.onload = function(){
         var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;

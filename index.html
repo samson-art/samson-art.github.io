@@ -16,23 +16,31 @@
             }
 		</script>
         <style type="text/css">
-            .friends {
+            #game_area {
+                margin-top: 10px;
+            }
+            .photo {
                 border: solid 1px;
                 margin-left: 10px;
                 margin-top: 10px;
             }
-            #message {
-                height: 10px;
+            .text {
+                margin-top: 10px;
+                height: 25px;
                 border: solid 1px gray;
+            }
+            #friends {
+                margin-top: 10px;
+                border: dashed 1px gray;
             }
         </style>
 	</head>
 	<body id="body">
-        <div id="user_photo" align="center"></div>
-        <div id="scope" align="center"></div>
+        <div class="photo" id="user_photo" align="center"></div>
+        <div class="text" id="scope" align="center"></div>
 		<div id="game_area" align="center"></div>
-        <div id="message" align="center"></div>
-        <div align="center">Предложить поиграть друзьям</div>
+        <div class="text" id="message" align="center"></div>
+        <div class="text" align="center">Предложить поиграть друзьям</div>
         <div id="friends" align="center"></div>
 	</body>
 </html>
