@@ -15,7 +15,23 @@ function doIt(){
             friends_div.innerHTML += '<img class="friends" src="'+data.response[i].photo_100+'">';
         }
         var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
-    VK.callMethod("resizeWindow", 607, height);
+    //Проверяем элемент body на наличие.
+        if (!document.getElementById('body')) {
+            alert('error');
+            return;
+        }
+        // Успешно ли подключен ВК скрипт
+        if (typeof VK.callMethod != 'undefined') {
+        /*
+        Вызываем функцию vk js api для управления окном.
+        VK.callMethod('функция', параметры)
+        В данном случае у нас - VK.callMethod('изменение_размеров_окна', ширина, высота);
+        Так же добавляем еще 60 пикселей что бы было небольшое расстояние.
+        */
+            VK.callMethod('resizeWindow', 840, document.getElementById('body').clientHeight);
+        } else {
+        alert('error #2');
+        }
     });
 
 }
