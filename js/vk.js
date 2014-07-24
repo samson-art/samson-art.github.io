@@ -14,10 +14,6 @@ function doIt(){
             var friends_div = document.getElementById('friends');
             create_img(data.response[i]);
         }
-        var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
-        setTimeout(function() {
-            VK.callMethod('resizeWindow', 607, height+100);
-        }.bind(this), 1500);
     });
 }
 function create_img(user) {
@@ -29,4 +25,8 @@ function create_img(user) {
     img.title = user.first_name + ' ' + user.last_name;
     img.className = 'friends';
     document.getElementById('friends').appendChild(img);
+    img.onload = function(){
+        var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
+        VK.callMethod('resizeWindow', 607, height);
+    }.bind(VK);
 }
