@@ -197,14 +197,14 @@ Game.prototype.opponent_move2 = function () {
         this.matrix[1][1] = 2;
         this.canvas.fillRect(1, 1, 'blue');
     } else if (this.matrix[1][1] == 2) {
-        var i = Math.random()*_size | 0;
-        var j = Math.random()*_size | 0;
-        if (i!=j && !this.matrix[i][j]) {
+        var i = Math.random() * _size | 0;
+        var j = Math.random() * _size | 0;
+        if (i != j && !this.matrix[i][j]) {
             this.matrix[i][j] = 2;
             this.canvas.fillRect(j, i, 'blue');
-        } else {
-            this.opponent_move();
         }
+    }else{
+        this.opponent_move();
     }
 };
 Game.prototype.check_end = function(){
