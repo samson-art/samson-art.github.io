@@ -33,7 +33,7 @@ function Game(id){
                 this.update_scope();
                 return;
             }
-            Math.random() > 0.25 ? this.opponent_move2() : this.opponent_move();
+            Math.random() > 0.1 ? this.opponent_move2() : this.opponent_move();
             if (this.str = this.check_end()) {
                 this.end_game();
                 this.update_scope();
