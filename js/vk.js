@@ -7,7 +7,8 @@ function doIt(){
     this.avtosize = function() {
             var height = document.body.clientHeight > document.body.scrollHeight ? document.body.clientHeight : document.body.scrollHeight;
             VK.callMethod("resizeWindow", 607, height);
-    }().bind(VK);
+    };
+    this.avtosize();
     VK.api("users.get", {fields: "photo_100"},function(data) {
         var photo_div = document.getElementById('user_photo');
         photo_div.innerHTML = "<img class='photo' src="+data.response[0].photo_100+">";
