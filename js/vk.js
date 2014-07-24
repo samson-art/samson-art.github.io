@@ -28,7 +28,7 @@ function doIt(){
         В данном случае у нас - VK.callMethod('изменение_размеров_окна', ширина, высота);
         Так же добавляем еще 60 пикселей что бы было небольшое расстояние.
         */
-            VK.callMethod('resizeWindow', 840, document.getElementById('body').clientHeight);
+            VK.callMethod('resizeWindow', 607, document.getElementById('body').clientHeight);
         } else {
         alert('error #2');
         }
