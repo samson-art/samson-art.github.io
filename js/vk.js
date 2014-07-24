@@ -12,9 +12,20 @@ function doIt(){
     VK.api("friends.get", {fields: "photo_100"}, function(data) {
         for (var i = (Math.random()*data.response.length - 7) | 0, x=i+5; i < x; i++){
             var friends_div = document.getElementById('friends');
-            friends_div.innerHTML += '<img class="friends" src="'+data.response[i].photo_100+'">';
+            create_img(data.response[i]);
         }
         var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
         VK.callMethod('resizeWindow', 607, height+100);
     });
+}
+function create_img(user) {
+    var img = document.createElement('img');
+    img.onclick = function(){
+        VK.callMethod('showInviteBox()');
+    }
+    img.src = user.photo_100;
+    img.alt = user.first_name + ' ' + user.last_name;
+
+    document.getElementById('friends').appendChild(img);
+
 }
