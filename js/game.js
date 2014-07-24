@@ -33,7 +33,7 @@ function Game(id){
                 this.update_scope();
                 return;
             }
-            Math.random() > 0.05 ? this.opponent_move2() : this.opponent_move();
+            Math.random() >= 0.05 ? this.opponent_move2() : this.opponent_move();
             if (this.str = this.check_end()) {
                 this.end_game();
                 this.update_scope();
@@ -196,14 +196,7 @@ Game.prototype.opponent_move2 = function () {
     if(!this.matrix[1][1]) {
         this.matrix[1][1] = 2;
         this.canvas.fillRect(1, 1, 'blue');
-    } else if (this.matrix[1][1] == 2) {
-        var i = Math.random() * _size | 0;
-        var j = Math.random() * _size | 0;
-        if (i != j && !this.matrix[i][j]) {
-            this.matrix[i][j] = 2;
-            this.canvas.fillRect(j, i, 'blue');
-        }
-    }else{
+    } else {
         this.opponent_move();
     }
 };
