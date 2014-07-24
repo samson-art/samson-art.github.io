@@ -21,7 +21,7 @@ function doIt(){
 function create_img(user) {
     var img = document.createElement('img');
     img.onclick = function(){
-        VK.callMethod('showInviteBox()');
+        VK.callMethod('showInviteBox');
     }.bind(VK);
     img.src = user.photo_100;
     img.alt = user.first_name + ' ' + user.last_name;
