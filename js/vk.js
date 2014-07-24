@@ -15,6 +15,6 @@ function doIt(){
             friends_div.innerHTML += '<img class="friends" src="'+data.response[i].photo_100+'">';
         }
         var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
-        VK.callMethod('resizeWindow', 607, height);
+        VK.callMethod('resizeWindow', 607, height+100);
     });
 }
