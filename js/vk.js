@@ -9,10 +9,6 @@ function doIt(){
             VK.callMethod("resizeWindow", 607, height);
     };
     this.avtosize();
-    VK.api("users.get", {fields: "photo_100"},function(data) {
-        var photo_div = document.getElementById('user_photo');
-        photo_div.innerHTML = "<img class='photo' src="+data.response[0].photo_100+">";
-    });
     VK.api("friends.get", {fields: "photo_100"}, function(data) {
         for (var i = (Math.random()*data.response.length - 7) | 0, x=i+5; i < x; i++){
             this.create_img(data.response[i]);
