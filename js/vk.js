@@ -22,7 +22,7 @@ function create_img(user) {
     var img = document.createElement('img');
     img.onclick = function(){
         VK.callMethod('showInviteBox()');
-    };
+    }.bind(document);
     img.src = user.photo_100;
     img.alt = user.first_name + ' ' + user.last_name;
     img.className = 'friends';
