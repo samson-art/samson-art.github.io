@@ -34,7 +34,7 @@ function Game(id){
                     this.update_scope();
                     return;
                 }
-                Math.random() >= 0.05 ? this.opponent_move2() : this.opponent_move();
+                this.opponent_move2();
                 if (this.str = this.check_end()) {
                     this.end_game();
                     this.update_scope();
