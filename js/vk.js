@@ -15,7 +15,9 @@ function doIt(){
             create_img(data.response[i]);
         }
         var height=(document.body.scrollHeight > document.body.offsetHeight)?document.body.scrollHeight:document.body.offsetHeight;
-        VK.callMethod('resizeWindow', 607, height+100);
+        setTimeout(function() {
+            VK.callMethod('resizeWindow', 607, height+100);
+        }.bind(this), 1500);
     });
 }
 function create_img(user) {
