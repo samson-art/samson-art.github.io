@@ -33,11 +33,10 @@ function Game(id){
                 this.update_scope();
                 return;
             }
-            this.opponent_move();
+            Math.random() > 0.25 ? this.opponent_move2() : this.opponent_move();
             if (this.str = this.check_end()) {
                 this.end_game();
                 this.update_scope();
-                return;
             }
         }
     }.bind(this);
@@ -48,7 +47,7 @@ function Game(id){
         setTimeout(function(){
             this.message_div.innerHTML = '';
             this.canvas.clear_canvas();
-            if (this.scope[0]>4) {
+            if (!(this.scope[0]%4) && this.scope[0]) {
                 VK.api("wall.post", {message : 'Я выиграл ' + this.scope[0] + ' раз в игре:\nhttps://vk.com/app4471347_142348975}'});
             }
         }.bind(this), 1000);
@@ -71,6 +70,141 @@ Game.prototype.opponent_move = function () {
         this.canvas.fillRect(j, i, 'blue');
     } else {
         this.opponent_move();
+    }
+};
+Game.prototype.opponent_move2 = function () {
+    var check1 = function() {
+        if(this.matrix[0][0] == 0 && this.matrix[0][1] == 1 && this.matrix[0][2] == 1
+            || this.matrix[0][0] == 0 && this.matrix[1][0] == 1 && this.matrix[2][0] == 1
+            || this.matrix[0][0] == 0 && this.matrix[1][1] == 1 && this.matrix[2][2] == 1) {
+            this.matrix[0][0] = 2;
+            this.canvas.fillRect(0, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[0][0] == 1 && this.matrix[0][1] == 0 && this.matrix[0][2] == 1
+            || this.matrix[1][1] == 1 && this.matrix[0][1] == 0 && this.matrix[2][1] == 1) {
+            this.matrix[0][1] = 2;
+            this.canvas.fillRect(1, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[0][0] == 1 && this.matrix[0][1] == 1 && this.matrix[0][2] == 0
+            || this.matrix[0][2] == 0 && this.matrix[1][2] == 1 && this.matrix[0][2] == 0) {
+            this.matrix[0][2] = 2;
+            this.canvas.fillRect(2, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 0 && this.matrix[1][1] == 1 && this.matrix[1][2] == 1
+            || this.matrix[1][0] == 0 && this.matrix[1][1] == 1 && this.matrix[2][1] == 1) {
+            this.matrix[1][0] = 2;
+            this.canvas.fillRect(0, 1, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 1 && this.matrix[1][1] == 0 && this.matrix[1][2] == 1
+            || this.matrix[0][1] == 1 && this.matrix[1][1] == 0 && this.matrix[2][1] == 1
+            || this.matrix[0][0] == 1 && this.matrix[1][1] == 0 && this.matrix[2][2] == 1) {
+            this.matrix[1][1] = 2;
+            this.canvas.fillRect(1, 1, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 1 && this.matrix[1][1] == 1 && this.matrix[1][2] == 0
+            || this.matrix[0][2] && this.matrix[1][2] == 0 && this.matrix[2][2] == 1) {
+            this.matrix[1][2] = 2;
+            this.canvas.fillRect(2, 1, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 0 && this.matrix[2][1] == 1 && this.matrix[2][2] == 1
+            || this.matrix[0][0] == 1 && this.matrix[1][0] == 1 && this.matrix[2][0] == 0) {
+            this.matrix[2][0] = 2;
+            this.canvas.fillRect(0, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 1 && this.matrix[2][1] == 0 && this.matrix[2][2] == 1
+            || this.matrix[2][0] == 1 && this.matrix[2][1] == 0 && this.matrix[2][2] == 1) {
+            this.matrix[2][1] = 2;
+            this.canvas.fillRect(1, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 1 && this.matrix[2][1] == 1 && this.matrix[2][2] == 0
+            || this.matrix[0][2] == 1 && this.matrix[1][2] == 1 && this.matrix[2][2] == 0
+            || this.matrix[0][0] == 1 && this.matrix[1][1] == 1 && this.matrix[2][2] == 0) {
+            this.matrix[2][2] = 2;
+            this.canvas.fillRect(2, 2, 'blue');
+            return true;
+        }
+    }.bind(this);
+    var check2 = function(){
+        if(this.matrix[0][0] == 0 && this.matrix[0][1] == 2 && this.matrix[0][2] == 2
+            || this.matrix[0][0] == 0 && this.matrix[1][0] == 2 && this.matrix[2][0] == 2
+            || this.matrix[0][0] == 0 && this.matrix[1][1] == 2 && this.matrix[2][2] == 2) {
+            this.matrix[0][0] = 2;
+            this.canvas.fillRect(0, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[0][0] == 2 && this.matrix[0][1] == 0 && this.matrix[0][2] == 2
+            || this.matrix[1][1] == 2 && this.matrix[0][1] == 0 && this.matrix[2][1] == 2) {
+            this.matrix[0][1] = 2;
+            this.canvas.fillRect(1, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[0][0] == 2 && this.matrix[0][1] == 2 && this.matrix[0][2] == 0
+            || this.matrix[0][2] == 0 && this.matrix[1][2] == 2 && this.matrix[0][2] == 0) {
+            this.matrix[0][2] = 2;
+            this.canvas.fillRect(2, 0, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 0 && this.matrix[1][1] == 2 && this.matrix[1][2] == 2
+            || this.matrix[1][0] == 0 && this.matrix[1][1] == 2 && this.matrix[2][1] == 2) {
+            this.matrix[1][0] = 2;
+            this.canvas.fillRect(0, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 2 && this.matrix[1][1] == 0 && this.matrix[1][2] == 2
+            || this.matrix[0][1] == 2 && this.matrix[1][1] == 0 && this.matrix[2][1] == 2
+            || this.matrix[0][0] == 2 && this.matrix[1][1] == 0 && this.matrix[2][2] == 2) {
+            this.matrix[1][1] = 2;
+            this.canvas.fillRect(1, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[1][0] == 2 && this.matrix[1][1] == 2 && this.matrix[1][2] == 0
+            || this.matrix[0][2] && this.matrix[1][2] == 0 && this.matrix[2][2] == 2) {
+            this.matrix[1][2] = 2;
+            this.canvas.fillRect(2, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 0 && this.matrix[2][1] == 2 && this.matrix[2][2] == 2
+            || this.matrix[0][0] == 2 && this.matrix[1][0] == 2 && this.matrix[2][0] == 0) {
+            this.matrix[2][0] = 2;
+            this.canvas.fillRect(0, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 2 && this.matrix[2][1] == 0 && this.matrix[2][2] == 2
+            || this.matrix[2][0] == 2 && this.matrix[2][1] == 0 && this.matrix[2][2] == 2) {
+            this.matrix[2][1] = 2;
+            this.canvas.fillRect(1, 2, 'blue');
+            return true;
+        }
+        if(this.matrix[2][0] == 2 && this.matrix[2][1] == 2 && this.matrix[2][2] == 0
+            || this.matrix[0][2] == 2 && this.matrix[1][2] == 2 && this.matrix[2][2] == 0
+            || this.matrix[0][0] == 2 && this.matrix[1][1] == 2 && this.matrix[2][2] == 0) {
+            this.matrix[2][2] = 2;
+            this.canvas.fillRect(2, 2, 'blue');
+            return true;
+        }
+    }.bind(this);
+    if (check1()) return;
+    if (check2()) return;
+    if(!this.matrix[1][1]) {
+        this.matrix[1][1] = 2;
+        this.canvas.fillRect(1, 1, 'blue');
+    } else if (this.matrix[1][1] == 2) {
+        var i = Math.random()*_size | 0;
+        var j = Math.random()*_size | 0;
+        if (i!=j && !this.matrix[i][j]) {
+            this.matrix[i][j] = 2;
+            this.canvas.fillRect(j, i, 'blue');
+        } else {
+            this.opponent_move();
+        }
     }
 };
 Game.prototype.check_end = function(){

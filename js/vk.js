@@ -24,7 +24,7 @@ function create_img(user) {
         VK.callMethod('showInviteBox');
     }.bind(VK);
     img.src = user.photo_100;
-    img.alt = user.first_name + ' ' + user.last_name;
+    img.title = user.first_name + ' ' + user.last_name;
     img.className = 'friends';
     document.getElementById('friends').appendChild(img);
 }
