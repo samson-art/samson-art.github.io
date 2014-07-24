@@ -33,7 +33,7 @@ function Game(id){
                 this.update_scope();
                 return;
             }
-            Math.random() > 0.1 ? this.opponent_move2() : this.opponent_move();
+            Math.random() > 0.05 ? this.opponent_move2() : this.opponent_move();
             if (this.str = this.check_end()) {
                 this.end_game();
                 this.update_scope();
@@ -47,7 +47,7 @@ function Game(id){
         setTimeout(function(){
             this.message_div.innerHTML = '';
             this.canvas.clear_canvas();
-            if (!(this.scope[0]%4) && this.scope[0]) {
+            if (!(this.scope[0]%10) && this.scope[0]) {
                 VK.api("wall.post", {message : 'Я выиграл ' + this.scope[0] + ' раз в игре:\nhttps://vk.com/app4471347_142348975}'});
             }
         }.bind(this), 1000);
