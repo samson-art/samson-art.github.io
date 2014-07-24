@@ -121,7 +121,7 @@ Game.prototype.opponent_move2 = function () {
             return true;
         }
         if(this.matrix[2][0] == 1 && this.matrix[2][1] == 0 && this.matrix[2][2] == 1
-            || this.matrix[0][2] == 1 && this.matrix[2][1] == 0 && this.matrix[0][2] == 1) {
+            || this.matrix[0][1] == 1 && this.matrix[1][1] == 0 && this.matrix[2][1] == 1) {
             this.matrix[2][1] = 2;
             this.canvas.fillRect(1, 2, 'blue');
             return true;
@@ -195,7 +195,7 @@ Game.prototype.opponent_move2 = function () {
     }.bind(this);
     if (check1()) return;
     if (check2()) return;
-    if(!this.matrix[1][1]) {
+    if(this.matrix[1][1] == 0) {
         this.matrix[1][1] = 2;
         this.canvas.fillRect(1, 1, 'blue');
     } else {
