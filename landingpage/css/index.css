@@ -1,0 +1,293 @@
+body {
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font: 400 1.25em/1 Helvetica;
+  color: #e6e6e6;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+.container .container {
+  border-top: 3px solid #666666;
+}
+
+.image {
+  display: block;
+  float: left;
+  height: auto;
+  overflow: hidden;
+}
+
+.img {
+  float: left;
+  width: 10%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.img .image {
+  width: 77px;
+  margin-left: 20%;
+}
+
+.text {
+  float: left;
+  text-align: center;
+}
+
+._button {
+  display: block;
+  width: 12.5%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: #666666;
+  font: 400 0.8em/1.38 Montserrat;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.container ._container {
+  clear: both;
+}
+
+.container-1 {
+  height: 100px;
+  background: url('../images/bck.jpg') rgba(0, 0, 0, 0.18);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-10 {
+  clear: both;
+  height: 100px;
+  border-top: 1px solid #666666;
+  background-image: url('../images/simple%20silver%20iphone%206%20wallpaper%2021842%20-%20other%20iphone%206%20wallpapers-f11376(2).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-2 {
+  clear: both;
+  height: 4553px;
+}
+
+.container-3 {
+  height: 650px;
+  background-image: url('../images/girl.jpg');
+  background-size: auto auto;
+  background-position: center top;
+}
+
+.container-4 {
+  height: 650px;
+  background-image: url('../images/bkg-2.jpg');
+  background-size: auto auto;
+  background-position: left top;
+}
+
+.container-5 {
+  height: 650px;
+  background-image: url('../images/inhand.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-6 {
+  height: 650px;
+  background-image: url('../images/title(2).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-7 {
+  height: 650px;
+  background-image: url('../images/smarthome.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.container-8 {
+  height: 650px;
+  background-image: url('../images/intertainment.jpg');
+  background-size: cover;
+  background-position: center top;
+}
+
+.container-9 {
+  height: 653px;
+  background-image: url('../images/Home_Security_Systems.jpg');
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.image-2 {
+  width: 16.6666666666%;
+  margin: 25px 0 0 8.25%;
+}
+
+.image-3 {
+  width: 16.6666666666%;
+  margin: 25px 0 0 16.3333333333%;
+}
+
+.image-4 {
+  width: 16.6666666666%;
+  margin: 25px 0 0 16.0833333333%;
+}
+
+.image-5 {
+  width: 40%;
+  margin: 25px 0 0 5%;
+}
+
+.text-1 {
+  width: 25.5833333333%;
+  margin-top: 25px;
+  font: 400 2.05em/1.38 Montserrat;
+  color: #444444;
+}
+
+.text-10 {
+  width: 60%;
+  min-height: 101px;
+  margin: 300px 0 0 20%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 1em;
+  color: #d2cdcd;
+}
+
+.text-11 {
+  width: NaN;
+  margin: 40px 0 0 10%;
+  font-family: 'Times New Roman';
+  font-size: 1em;
+  font-weight: Regular;
+  color: #1a1a1a;
+}
+
+.text-2 {
+  display: inline-block;
+  width: 22.3333333333%;
+  margin: 37px 0 0 2.0833333333%;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.text-3 {
+  clear: both;
+  width: 90%;
+  min-height: 17px;
+  margin: 25px 0 0 5%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.44);
+  font-family: Baskerville;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.text-4 {
+  width: 45%;
+  margin-top: 152px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.44);
+  font-size: 1.4em;
+  color: rgb(208, 165, 38);
+  word-break: normal;
+}
+
+.text-5 {
+  display: inline-block;
+  clear: both;
+  width: 80%;
+  min-height: 116px;
+  margin: 25px 0 0 10%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.47);
+  font-size: 1em;
+  color: rgb(208, 165, 38);
+}
+
+.text-6 {
+  width: 40.8333333333%;
+  margin: 246px 0 0 10%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.51);
+  font-size: 1em;
+  color: #333333;
+}
+
+.text-7 {
+  width: 55%;
+  margin: 303px 0 0 40%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.76);
+  font-size: 1em;
+  color: #e6e6e6;
+}
+
+.text-8 {
+  width: 60%;
+  min-height: 75px;
+  margin: 321px 0 0 20%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.52);
+  font-size: 1em;
+  color: #e6e6e6;
+}
+
+.text-9 {
+  width: 40%;
+  min-height: 75px;
+  margin: 25px 0 0 5%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.36);
+  font-size: 1em;
+  color: #1a1a1a;
+}
+
+.container ._button-1 {
+  float: right;
+  margin: 30px 10% 0 0;
+}
+
+.container ._button-2 {
+  float: left;
+  margin: 25px 0 0 27.75%;
+}
+
+.container ._button-3 {
+  float: left;
+  margin: 25px 0 0 6%;
+}
+
+#head {
+   top: 0; /*высота шапки в пикселях*/
+   position: fixed;
+   z-index: 1000;
+   background: rgba(255, 255, 255, 0.85);
+}
+
+#body {
+   margin-top: 100px; /*высота шапки в пикселях*/
+}
+
+.hidden{
+opacity:0;
+}
+.visible{
+opacity:1;
+}

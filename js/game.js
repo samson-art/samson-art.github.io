@@ -96,7 +96,7 @@ Game.prototype.opponent_move2 = function () {
             return true;
         }
         if(this.matrix[1][0] == 0 && this.matrix[1][1] == 1 && this.matrix[1][2] == 1
-            || this.matrix[1][0] == 0 && this.matrix[1][1] == 1 && this.matrix[2][1] == 1) {
+            || this.matrix[1][0] == 0 && this.matrix[0][0] == 1 && this.matrix[2][0] == 1) {
             this.matrix[1][0] = 2;
             this.canvas.fillRect(0, 1, 'blue');
             return true;
