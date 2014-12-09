@@ -11,7 +11,7 @@ body {
 .container {
   float: left;
   width: 100%;
-  min-width: 800px;
+  min-width: 768px;
 }
 
 .container .container {
@@ -226,8 +226,8 @@ body {
 }
 
 .text-6 {
-  width: 40.8333333333%;
-  margin: 220px 0 0 10%;
+  width: 45%;
+  margin: 220px 0 0 5%;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.51);
   font-size: 1em;
@@ -270,12 +270,13 @@ body {
 
 .container ._button-2 {
   float: left;
+  min-width: 130px;
   margin: 25px 0 0 27.75%;
 }
 
 .container ._button-3 {
   float: left;
-  margin: 25px 0 0 6%;
+  margin: 25px 0 0 5%;
 }
 
 #head {
