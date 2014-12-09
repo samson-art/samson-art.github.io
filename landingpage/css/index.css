@@ -1,11 +1,29 @@
 body {
   height: 100%;
-  background: rgba(255, 255, 255, 0);
+  background: url('../images/bck.jpg') rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   font: 400 1.25em/1 Helvetica;
   color: #e6e6e6;
+}
+
+.image {
+  display: block;
+  float: left;
+  width: auto;
+  overflow: hidden;
+}
+
+.button {
+  display: block;
+  width: 12.5%;
+  height: 50px;
+  background-color: #666666;
+  font: 400 0.8em/1.38 Montserrat;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 .container {
@@ -14,78 +32,76 @@ body {
   min-width: 768px;
 }
 
-.container .container {
-  border-top: 3px solid #666666;
+.header {
+  height: 100px;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: 1000;
 }
 
-.image {
-  display: block;
+.header .img {
+  height: 100px;
+  margin-left: 25px;
   float: left;
+}
+
+.header .textlogo {
+  float: left;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-family: Baskerville;
+  font-size: 50px;
   height: auto;
-  overflow: hidden;
+  width: auto;
+  font-weight: normal;
+  color: #666666;
 }
 
-.img {
-  float: left;
-  width: 10%;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0);
+.header .button {
+  float: right;
+  margin-right: 25px;
+  margin-top: 25px;
 }
 
-.img .image {
-  width: 77px;
-  margin-left: 20%;
-}
-
-.text {
-  float: left;
-  text-align: center;
-}
-
-._button {
-  display: block;
-  width: 12.5%;
-  height: 50px;
-  border-radius: 3px;
-  background-color: #666666;
-  font: 400 0.8em/1.38 Montserrat;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-
-.container ._container {
+.body {
   clear: both;
+  height: 4000px;
 }
 
-.container-1 {
-  height: 100px;
-  background: url('../images/bck.jpg') rgba(0, 0, 0, 0.18);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.container-10 {
+.bottom {
   clear: both;
   height: 100px;
-  border-top: 1px solid #666666;
-  background-image: url('../images/simple%20silver%20iphone%206%20wallpaper%2021842%20-%20other%20iphone%206%20wallpapers-f11376(2).jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.container-2 {
-  clear: both;
-  height: 4553px;
 }
 
 .container-3 {
-  height: 650px;
+  height: 750px;
   background-image: url('../images/girl.jpg');
   background-size: auto auto;
   background-position: center top;
 }
+
+.container-3 .text {
+  width: 83%;
+  max-height: 265px;
+  min-height: 17px;
+  margin: 115px 0 0 8.25%;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.44);
+  font-family: Baskerville;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.container-3 .img {
+  width: 33.333333%;
+  max-height: 405px;
+  float: left;
+  margin-top: 115px;
+  padding-left: 7%;
+}
+
+
 
 .container-4 {
   height: 650px;
@@ -131,19 +147,15 @@ body {
   background-position: center bottom;
 }
 
-.image-2 {
-  width: 16.6666666666%;
-  margin: 20px 0 0 8.25%;
+.container .container {
+  border-top: 3px solid #666666;
 }
 
-.image-3 {
-  width: 16.6666666666%;
-  margin: 20px 0 0 16.3333333333%;
-}
-
-.image-4 {
-  width: 16.6666666666%;
-  margin: 20px 0 0 16.0833333333%;
+.text {
+  float: left;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.15;
 }
 
 .image-5 {
@@ -188,20 +200,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.text-3 {
-  clear: both;
-  width: 90%;
-  max-height: 265px;
-  min-height: 17px;
-  margin: 20px 0 0 5%;
-  border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.44);
-  font-family: Baskerville;
-  font-size: 1.4em;
-  font-weight: normal;
-  color: rgba(255, 255, 255, 0.82);
-}
-
 .text-4 {
   width: 45%;
   max-height: 240px;
@@ -227,7 +225,8 @@ body {
 
 .text-6 {
   width: 45%;
-  margin: 220px 0 0 5%;
+  min-width: 414px;
+  margin: 200px 0 0 5%;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.51);
   font-size: 1em;
@@ -263,11 +262,6 @@ body {
   color: #1a1a1a;
 }
 
-.container ._button-1 {
-  float: right;
-  margin: 30px 10% 0 0;
-}
-
 .container ._button-2 {
   float: left;
   min-width: 130px;
@@ -277,17 +271,6 @@ body {
 .container ._button-3 {
   float: left;
   margin: 25px 0 0 5%;
-}
-
-#head {
-   top: 0; /*высота шапки в пикселях*/
-   position: fixed;
-   z-index: 1000;
-   background: rgba(255, 255, 255, 0.85);
-}
-
-#body {
-   margin-top: 100px; /*высота шапки в пикселях*/
 }
 
 .hidden{

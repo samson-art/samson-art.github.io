@@ -9,24 +9,37 @@ $( document ).ready(function() {
 	});
 
 	$(window).scroll(function(){
-      $('#head').css("top", 0);
-  });
+      $('.header').css("top", 0);
+  	});
 
-  $( "._button" ).mouseenter(function() {
+	//button style
+  	$( "button" ).mouseenter(function() {
   		$(this).css("background-color", "rgba(255, 255, 255, 0.9)");	
   		$(this).css("color", "#666666");	
 	});
-	$( "._button" ).mouseleave(function() {
+	$( "button" ).mouseleave(function() {
   		$(this).css("background-color", "#666666");	
   		$(this).css("color", "rgba(255, 255, 255, 0.9)");	
 	}); 
 
+	//text style
+	$( "#body tr:not()" ).mouseenter(function() {
+  		$(this).css("background-color", "rgba(255, 255, 255, 0.9)");	
+  		$(this).css("color", "#666666");	
+	});
+	$( "#body tr:not()" ).mouseleave(function() {
+  		$(this).css("background-color", "#666666");	
+  		$(this).css("color", "rgba(255, 255, 255, 0.9)");	
+	}); 
+
+	//animate containers
 	jQuery('.post').addClass("hidden").viewportChecker({
 		classToAdd: 'visible animated bounceInLeft',
 		offset: 100
 	});
 
-	$('.totop').click(function () { 
+	//scroll to top
+	$('.header').click(function () { 
      if($.browser.safari){
        $('body').animate( { scrollTop: 0 }, 1100 );
      }else{
@@ -34,6 +47,8 @@ $( document ).ready(function() {
      }
      return false;
    });
+
+
 
 });
 
