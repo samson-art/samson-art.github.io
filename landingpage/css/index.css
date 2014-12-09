@@ -11,6 +11,7 @@ body {
 .container {
   float: left;
   width: 100%;
+  min-width: 800px;
 }
 
 .container .container {
@@ -132,17 +133,17 @@ body {
 
 .image-2 {
   width: 16.6666666666%;
-  margin: 25px 0 0 8.25%;
+  margin: 20px 0 0 8.25%;
 }
 
 .image-3 {
   width: 16.6666666666%;
-  margin: 25px 0 0 16.3333333333%;
+  margin: 20px 0 0 16.3333333333%;
 }
 
 .image-4 {
   width: 16.6666666666%;
-  margin: 25px 0 0 16.0833333333%;
+  margin: 20px 0 0 16.0833333333%;
 }
 
 .image-5 {
@@ -153,14 +154,15 @@ body {
 .text-1 {
   width: 25.5833333333%;
   margin-top: 25px;
+  margin-left: 25px;
   font: 400 2.05em/1.38 Montserrat;
   color: #444444;
 }
 
 .text-10 {
-  width: 60%;
+  width: 80%;
   min-height: 101px;
-  margin: 300px 0 0 20%;
+  margin: 320px 0 0 10%;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.8);
   font-size: 1em;
@@ -189,8 +191,9 @@ body {
 .text-3 {
   clear: both;
   width: 90%;
+  max-height: 265px;
   min-height: 17px;
-  margin: 25px 0 0 5%;
+  margin: 20px 0 0 5%;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.44);
   font-family: Baskerville;
@@ -201,7 +204,8 @@ body {
 
 .text-4 {
   width: 45%;
-  margin-top: 152px;
+  max-height: 240px;
+  margin-top: 25px;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.44);
   font-size: 1.4em;
@@ -223,7 +227,7 @@ body {
 
 .text-6 {
   width: 40.8333333333%;
-  margin: 246px 0 0 10%;
+  margin: 220px 0 0 10%;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.51);
   font-size: 1em;
