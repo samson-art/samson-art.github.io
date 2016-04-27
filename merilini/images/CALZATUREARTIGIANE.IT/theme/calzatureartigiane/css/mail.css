@@ -1,0 +1,87 @@
+form#formail{
+margin:0 auto;
+width: 570px;
+padding: 10px;
+}
+
+form#formail p{
+color: #000;
+}
+
+
+input[type=text]{
+background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #D9D9D9;
+    color: #262626;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.23em;
+    margin: 0;
+    outline: medium none;
+    padding: 6px 10px;
+    width: 470px;
+	float:right;
+}
+textarea{
+background: none repeat scroll 0 0 #FCFCFC;
+    border: 1px solid #D9D9D9;
+    color: #262626;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.23em;
+    margin: 0;
+    outline: medium none;
+    padding: 6px 10px;
+    width: 550px;
+}
+#risposta{
+display: none;
+height: 70px;
+    margin: 0 auto;
+    padding: 0;
+}
+#risposta p{
+color: #FF9600;
+    font-size: 17px;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+#risposta2{
+display: none;
+height: 70px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#risposta2 p{
+color: #fff !important;
+    font-size: 17px;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+
+
+input[type=submit] { 
+background: none repeat scroll 0 0 #000000;
+    border: 1px solid #3C3C3C;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font: 13px Tahoma,Geneva,sans-serif;
+    margin: 25px auto;
+    overflow: visible;
+    padding: 9px 60px 10px;
+    transition: all 0.3s linear 0s;
+}
+
+input[type=submit]:hover { opacity:0.8; filter:alpha(opacity=80); }
+
+
+.label {
+	height: 30px;
+	display: block;
+}
+

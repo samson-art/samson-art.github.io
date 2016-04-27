@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 15 Jun 2015 10:09:41 +0200</pubDate><title><![CDATA[ORDINE/ACQUISTO]]></title><url><![CDATA[ordineacquisto]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[ORDINE/ACQUISTO]]></menu><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[ordine_acquisto.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Ordine&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/ordine.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;Per ordinare le nostre &lt;strong&gt;calzature artigiane&lt;/strong&gt;, potete contattarci al numero telefonico (+39 0424 75300), inviarci una &lt;a href=\&quot;mailto: calz.dm@alice.it\&quot;&gt;&lt;strong&gt;mail&lt;/strong&gt;&lt;/a&gt; oppure compilare il form che trovate nella sezione \&quot;Contatti\&quot;.&lt;br /&gt;
+			Disponiamo di diversi modelli che possono essere modificati, in base alle varie esigenze della clientela.&lt;br /&gt;
+			&lt;strong&gt;Per i distributori:&lt;/strong&gt; Per ordini, accettiamo quantitativi con un &lt;strong&gt;minimo di n°60 paia per modello / colore&lt;/strong&gt;. Una volta ricevuto l\&#039;ordine o la Vostra richiesta di informazioni, &lt;strong&gt;Vi contatteremo entro 24/48 ore&lt;/strong&gt;.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Consegna&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/consegna.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;La consegna viene effettuata tramite corrieri internazionali &lt;strong&gt;(UPS, DHL, MBE, EMS, TNT, BTL, Alisped)&lt;/strong&gt;.&lt;br /&gt;
+			Tutti i dettagli relativi alla consegna verrano chiariti con l\&#039;acquirente prima della spedizione della merce.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Pagamenti&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/pagamenti.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;Accettiamo pagamenti tramite carte di credito &lt;strong&gt;(Visa, Master Card, PayPal, American Express) e tramite bonifo bancaro&lt;/strong&gt; (i dati verrano forniti una volta ultimato l\&#039;ordine)&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author><menuOrder><![CDATA[3]]></menuOrder></item>
