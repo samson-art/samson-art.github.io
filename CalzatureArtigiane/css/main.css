@@ -203,7 +203,7 @@ body {
     box-sizing: content-box;
 }
 #order a:hover {
-    
+
 }
 #order .order {
     display: inline-block;
@@ -245,12 +245,20 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.75)
+    background: rgba(0, 0, 0, 0.75);
+    margin-bottom: 0;
 }
 
 #contacts .row{
     padding: 50px 25px;
-    height: 500px;
+
+}
+
+#contacts iframe {
+    width: 100%;
+    align-self: stretch;
+    padding: 10px 20px;
+    min-height: 200px;
 }
 
 /*footer*/
