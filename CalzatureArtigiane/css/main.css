@@ -16,13 +16,28 @@ body {
 
 .sections-header {
     text-align: center;
+    padding-bottom: 40px;
+    margin-top: 30px;
 }
-.sections-header h3 {
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+.sections-header .slide {
     display: inline-block;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    border-right-width: 0;
+    border-left-width: 0;
+    bottom: 30px;
+    content: "";
+    height: 2px;
+    width: 60px;
+    margin-left: -5px;
+}
+
+.sections-header h3 {
+    display: inline-block;
+}
+
+.wow {
+    -vendor-animation-duration: 3s;
 }
 
 /*header*/
@@ -71,7 +86,7 @@ body {
     color: rgba(0, 0, 0, 1);
 }
 #menu.navbar-default {
-    font-size: 16px;
+    font-size: 18px;
     background-color: rgba(255, 255, 255, 1);
     border-width: 0px;
     border-radius: 0px;
@@ -107,12 +122,11 @@ body {
 }
 
 .logo {
-    display: inline-block;
+
 }
 
 .logo img {
-    max-height: 100px;
-    max-width: 256px;
+
 }
 
 /*slider*/
@@ -123,7 +137,7 @@ body {
 
 /*summary*/
 #summary {
-    margin-top: 25px;
+    margin-top: 65px;
 }
 #summary p {
     font-size: 20px;
@@ -132,12 +146,15 @@ body {
     font-size: 12px;
 }
 .description {
-    margin-top: 20px;
+    margin-top: 65px;
 }
 
 /*collections*/
-.thumbnails {
-
+#collections {
+    background: url('../images/pattern.jpg')!important;
+}
+.thumbnail {
+    background: transparent;
 }
 
 .thumbnails .thumbnail, .thumbnails .thumbnail:hover {
@@ -145,7 +162,7 @@ body {
 }
 
 .thumbnails .tab-pane {
-    margin-top: 10px;
+    padding-top: 40px;
 }
 
 .thumbnails .tab-content img {
@@ -163,12 +180,13 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-left: 30px;
 }
 
 .nav-tabs li > a, .nav-tabs li > a:hover, .nav-tabs li > a:focus {
     border: none;
     border-radius: 0;
-    background: none;
+    background: transparent;
     color: black;
 }
 
@@ -176,20 +194,35 @@ body {
     border: solid 2px black;
     color: black;
     cursor: pointer;
+    background: transparent;
 }
+
+
 
 /*order*/
 #order {
     margin-top: 20px;
     min-height: 250px;
     background: transparent;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
     font-size: 20px;
     color: white;
 }
+
+#order .order {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    background: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 30px;
+}
+
 #order a {
     padding: 5px 35px;
     color: white;
@@ -205,11 +238,31 @@ body {
 #order a:hover {
 
 }
-#order .order {
+#contacts .order {
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    background: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
     display: inline-block;
-    padding: 10px 20px;
-    border-radius: 5px;
-    background: rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+.order a {
+    padding: 5px 35px;
+    color: white;
+    font-size: 16px;
+    background: gray;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 1px solid #FFF;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 /*bullets*/
 #bullets {
@@ -222,13 +275,16 @@ body {
     font-size: 16px;
 }
 
+#bullets img {
+    max-height: 100px;
+    margin-bottom: 10px;
+}
+
 #howmade {
-    margin-top: 20px;
     font-size: 18px;
 }
-#howmade .row {
-    padding-top: 25px;
-    padding-bottom: 25px;
+#howmade .img {
+    padding: 0;
 }
 
 .story {
@@ -245,8 +301,9 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 1);
     margin-bottom: 0;
+    width: 75%;
 }
 
 #contacts .row{
@@ -259,6 +316,7 @@ body {
     align-self: stretch;
     padding: 10px 20px;
     min-height: 200px;
+
 }
 
 /*footer*/
