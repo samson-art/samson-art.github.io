@@ -50,11 +50,11 @@
                                 <ul class="nav navbar-nav navbar-left text-justify">
                                     <li><a href="#" class="smooth-scroll text-justify">HOME</a>
                                     </li>
-                                    <li><a href="#howmade" class="smooth-scroll text-justify">HOW IT MADE</a>
+                                    <li><a href="#howmade" class="smooth-scroll text-justify">OUR COMPANY</a>
                                     </li>
                                     <li><a href="#collections" class="smooth-scroll text-justify">SHOES</a>
                                     </li>
-                                    <li><a href="#order" class="smooth-scroll text-justify">ORDER AND DELIVERY</a>
+                                    <li><a href="#orderdelivery" class="smooth-scroll text-justify">ORDER AND DELIVERY</a>
                                     </li>
                                     <li><a href="#contacts" class="smooth-scroll text-justify">CONTACTS</a></li>
                                 </ul>
@@ -271,7 +271,7 @@
         <div class="order">
             <p class="text-uppercase">DO YOU WANT YOUR OWN HANDMADE SHOES AT FACTORY PRICE? ORDER NOW!</p>
             <p>
-                <a href="#order">Order</a>
+                <a data-toggle="modal" data-target=".orderModal" href="">Order</a>
             </p>
             <p class="small">Our managers will contact you as soon as possible</p>
         </div>
@@ -406,6 +406,40 @@
         </div>
     </section>
 
+    <section id="orderdelivery">
+        <div class="sections-header">
+            <h3 class="text-uppercase">
+                How to order
+            </h3>
+            <div>
+                <div class="slide wow slideInLeft"></div>
+                <div class="slide wow slideInRight"></div>
+            </div>
+            <div>
+                <div class="slide wow slideInLeft"></div>
+                <div class="slide wow slideInRight"></div>
+            </div>
+        </div>
+        <div class="container row center-block text-justify" style="padding-top: 25px">
+            <div class="col-md-4">
+                <img class="img-responsive center-block" style="max-height: 150px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgNjEyLjAwMiA2MTIuMDAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA2MTIuMDAyIDYxMi4wMDI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTUwMy42MjYsNDQ0LjY1N2MxMi44NjksMCwyNC41NDQsNS4yMzksMzIuOTcxLDEzLjY0NmM4LjQyOCw4LjQyNywxMy42NjYsMjAuMTAyLDEzLjY2NiwzMi45NzEgICAgIHMtNS4yMzgsMjQuNTQ0LTEzLjY2NiwzMi45NzFjLTguNDI3LDguNDI4LTIwLjA4MSwxMy42NDYtMzIuOTcxLDEzLjY0NmMtMTIuODY5LDAtMjQuNTQ0LTUuMjIxLTMyLjk3MS0xMy42NDYgICAgIGMtOC40MjgtOC40MjYtMTMuNjQ2LTIwLjEwMi0xMy42NDYtMzIuOTcxczUuMjM5LTI0LjU0NCwxMy42NDYtMzIuOTcxQzQ3OS4wODIsNDQ5Ljg3Nyw0OTAuNzU3LDQ0NC42NTcsNTAzLjYyNiw0NDQuNjU3ICAgICBMNTAzLjYyNiw0NDQuNjU3eiBNNTIzLjA2OSw0NzEuODMxYy00Ljk2LTQuOTYxLTExLjg1NC04LjA0OS0xOS40NDMtOC4wNDlzLTE0LjQ2MywzLjA4OC0xOS40NDMsOC4wNDkgICAgIGMtNC45NzksNC45OC04LjA0OSwxMS44NTQtOC4wNDksMTkuNDQzczMuMDg4LDE0LjQ2Myw4LjA0OSwxOS40NDNjNC45Niw0Ljk2MSwxMS44NTQsOC4wNDksMTkuNDQzLDguMDQ5ICAgICBzMTQuNDYzLTMuMDg4LDE5LjQ0My04LjA0OWM0Ljk2MS00Ljk4LDguMDQ5LTExLjg1NCw4LjA0OS0xOS40NDNTNTI4LjAzLDQ3Ni44MTIsNTIzLjA2OSw0NzEuODMxeiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cGF0aCBkPSJNMjI5LjEwMyw0MzIuODQ0Yy0yLjcwOSw0LjUwMi04LjU2Niw1LjkzNy0xMy4wNjksMy4yMjhjLTQuNTAyLTIuNzEtNS45MzctOC41NjYtMy4yMjctMTMuMDY5bDE0LjAyNS0yMy4wODkgICAgIGMxLjc5My0yLjk0OSw0LjkyLTQuNTgyLDguMTQ4LTQuNTgydi0wLjA4aDI5MC4yNDJjNS4yNzksMCw5LjU2Myw0LjI4Myw5LjU2Myw5LjU2M3MtNC4yODMsOS41NjItOS41NjMsOS41NjJIMjQwLjI5OSAgICAgTDIyOS4xMDMsNDMyLjg0NHoiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTIxMS44MTEsMjY2LjE1N2MtNS4yNzksMC05LjU2My00LjI4My05LjU2My05LjU2M2MwLTUuMjgsNC4yODMtOS41NjMsOS41NjMtOS41NjNoMzY0LjE5MWw3Ljc5LTQxLjU3NyAgICAgYzAuOTU2LTUuMTgsNS45NTYtOC41ODYsMTEuMTE2LTcuNjNjNS4xOCwwLjk1Niw4LjU4Niw1Ljk1Nyw3LjYzLDExLjExNmwtOS4xMDQsNDguNjA5Yy0wLjQ3OCw0LjgyMS00LjU4Miw4LjYwNi05LjUyMSw4LjYwNiAgICAgSDIxMS44MTFWMjY2LjE1N3oiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTU5My4xNzUsMTk3LjYyNmM1LjI3OSwwLDkuNTYzLDQuMjgzLDkuNTYzLDkuNTYzYzAsNS4yOC00LjI4Myw5LjU2My05LjU2Myw5LjU2M2gtNDAyLjk2ICAgICBjLTUuMjc5LDAtOS41NjMtNC4yODMtOS41NjMtOS41NjNjMC01LjI4LDQuMjgzLTkuNTYzLDkuNTYzLTkuNTYzSDU5My4xNzV6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik0xOTcuOTI1LDM2NC45N2MtNS4yNzksMC05LjU2My00LjI4My05LjU2My05LjU2M3M0LjI4My05LjU2Miw5LjU2My05LjU2MmgzNTkuNTdsNy43ODktNDEuNTc3ICAgICBjMC45NTYtNS4xOCw1Ljk1Ny04LjU4NiwxMS4xMzctNy42M3M4LjU4Niw1Ljk1Nyw3LjYzLDExLjEzN2wtOS4xMDQsNDguNjA5Yy0wLjQ3OSw0LjgxOS00LjU4Miw4LjYwNC05LjUyMiw4LjYwNGgtMzY3LjVWMzY0Ljk3ICAgICB6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik04MC45NDMsNzQuMTFjNS4yNzksMCw5LjU2Myw0LjI4Myw5LjU2Myw5LjU2M3MtNC4yODMsOS41NjMtOS41NjMsOS41NjNIOS41NjNDNC4yODQsOTMuMjM2LDAsODguOTUzLDAsODMuNjczICAgICBzNC4yODQtOS41NjMsOS41NjQtOS41NjNIODAuOTQzeiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cGF0aCBkPSJNMjA2LjcxLDM1MS42NDJjMi4wNzIsNC44NDItMC4xNiwxMC40NzktNSwxMi41NTFjLTQuODQxLDIuMDcyLTEwLjQ3OS0wLjE1OS0xMi41NTEtNUw3Mi4xNTgsODcuNDM4ICAgICBjLTIuMDcyLTQuODQxLDAuMTU5LTEwLjQ1OSw1LTEyLjUzMWM0Ljg0MS0yLjA3MiwxMC40NzksMC4xNTksMTIuNTUxLDVMMjA2LjcxLDM1MS42NDJ6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik01NzQuNjY3LDI5Ni40NzljNS4yNiwwLDkuNTIzLDQuMjYzLDkuNTIzLDkuNTIyYzAsNS4yNi00LjI2NSw5LjUyMi05LjUyMyw5LjUyMmwtMzQxLjIyMi0wLjAyMSAgICAgYy0zLjkwNCwwLTcuMjcxLTIuMzUxLTguNzI2LTUuNzE4aC0wLjAybC0yMS42MTUtNDkuNDA2Yy0yLjA5Mi00LjgyMSwwLjEyLTEwLjQzOSw0Ljk0MS0xMi41NTEgICAgIGM0LjgyMS0yLjExMiwxMC40MzksMC4xMiwxMi41NTEsNC45NGwxOS4xMjUsNDMuNjg5TDU3NC42NjcsMjk2LjQ3OXoiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTM5LjkyNCwxMjkuMjc0YzIuMDkyLDQuODIxLTAuMTIsMTAuNDM5LTQuOTQsMTIuNTUxYy00LjgyMSwyLjA5Mi0xMC40MzktMC4xMi0xMi41NTEtNC45NEwwLjgxOCw4Ny40NzkgICAgIGMtMi4wOTItNC44MjEsMC4xMi0xMC40MzksNC45NC0xMi41NTFjNC44MjEtMi4wOTIsMTAuNDM5LDAuMTIsMTIuNTUxLDQuOTRMMzkuOTI0LDEyOS4yNzR6IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxwYXRoIGQ9Ik0xOTguOTYxLDIwMy4zODNjMi4wOTIsNC44MjEtMC4xMiwxMC40MzktNC45NDEsMTIuNTUxYy00LjgyMSwyLjExMi0xMC40MzktMC4xMi0xMi41NTEtNC45NGwtMjEuNjE1LTQ5LjQwNiAgICAgYy0yLjA5Mi00LjgyMSwwLjEyLTEwLjQ1OSw0Ljk0MS0xMi41NTFjMS4yMzUtMC41MzgsMi41My0wLjc5NywzLjgwNS0wLjc5N3YtMC4wMmg0MzMuODM4YzUuMjc5LDAsOS41NjMsNC4zMDMsOS41NjMsOS41NjMgICAgIGMwLDUuMjc5LTQuMjgzLDkuNTYzLTkuNTYzLDkuNTYzSDE4My4xODNMMTk4Ljk2MSwyMDMuMzgzeiIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8cGF0aCBkPSJNNTQuNTA3LDEyMy41MTdjNS4yNzksMCw5LjU2Myw0LjI4Myw5LjU2Myw5LjU2MmMwLDUuMjgtNC4yODMsOS41NjMtOS41NjMsOS41NjNIMzEuMTc5ICAgICBjLTUuMjc5LDAtOS41NjMtNC4yODMtOS41NjMtOS41NjNjMC01LjI4LDQuMjgzLTkuNTYyLDkuNTYzLTkuNTYySDU0LjUwN3oiIGZpbGw9IiMwMDAwMDAiLz4KCQkJPHBhdGggZD0iTTE4Mi40ODUsNDQ0LjY1N2MxMi44NywwLDI0LjU0NCw1LjIzOSwzMi45NzEsMTMuNjQ2YzguNDI3LDguNDI3LDEzLjY0NiwyMC4xMDIsMTMuNjQ2LDMyLjk3MSAgICAgcy01LjIyLDI0LjU0NC0xMy42NDYsMzIuOTcxYy04LjQyNiw4LjQyOC0yMC4xMDEsMTMuNjQ2LTMyLjk3MSwxMy42NDZzLTI0LjU0NC01LjIyMS0zMi45NzEtMTMuNjQ2ICAgICBjLTguNDI3LTguNDI2LTEzLjY0Ni0yMC4xMDItMTMuNjQ2LTMyLjk3MXM1LjIyLTI0LjU0NCwxMy42NDYtMzIuOTcxQzE1Ny45NCw0NDkuODc2LDE2OS42MTYsNDQ0LjY1NywxODIuNDg1LDQ0NC42NTcgICAgIEwxODIuNDg1LDQ0NC42NTd6IE0yMDEuOTI5LDQ3MS44MzFjLTQuOTgtNC45NjEtMTEuODU0LTguMDQ5LTE5LjQ0NC04LjA0OWMtNy41OSwwLTE0LjQ2MywzLjA4OC0xOS40NDQsOC4wNDkgICAgIGMtNC45Niw0Ljk4LTguMDQ4LDExLjg1NC04LjA0OCwxOS40NDNzMy4wODgsMTQuNDYzLDguMDQ4LDE5LjQ0M2M0Ljk4LDQuOTYxLDExLjg1NCw4LjA0OSwxOS40NDQsOC4wNDkgICAgIGM3LjU5LDAsMTQuNDYzLTMuMDg4LDE5LjQ0NC04LjA0OWM0Ljk2LTQuOTgsOC4wNDgtMTEuODU0LDguMDQ4LTE5LjQ0M1MyMDYuODksNDc2LjgxMiwyMDEuOTI5LDQ3MS44MzF6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPC9nPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" /><p class="text-center"><strong>Order</strong></p>
+                <p>
+                    To order our artisan shoes, please contact us at the telephone number (+39 0424 75300), send an e-mail or complete the related form in “Contacts” section. We have different models, which can be edited depending on your requirement. As regards the orders, we accept a minimum number of 60 pairs/model/colour. Once having received the order or your request for information, we will contact you within 24/48 hours.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive center-block" style="max-height: 150px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgogIDxnPgogICAgPGc+CiAgICAgIDxwYXRoIGQ9Im00MDAuOSw4NGgtOTAuN3YtNDhoLTI3MS4xYy0xNS42LDAtMjguMSwxMi41LTI4LjEsMjguMnYzMDIuM2MwLDE1LjYgMTIuNSwyOC4xIDI4LjEsMjguMWgzMi42Yy0wLjksNC40LTEuMyw4LjktMS4zLDEzLjYgMCwzNy41IDMwLjIsNjcuOCA2Ny44LDY3LjggMzcuNSwwIDY4LjgtMzEuMyA2Ny44LTY3LjggMC00LjMtMC40LTguNS0xLjItMTIuNWgxMjQuM2MtMC44LDQuMS0xLjIsOC4yLTEuMiwxMi41IDAsMzcuNSAzMC4yLDY3LjggNjcuOCw2Ny44czY3LjgtMzEuMyA2Ny44LTY3LjhjMC00LjMtMC40LTguNS0xLjItMTIuNWgxMC41YzE1LjYsMCAyOC4xLTEzLjYgMjguMS0yOS4ydi0xMzcuNmwtMTAwLTE0NC45em0tMTAuNCwxOS44bDgxLjMsMTE3LjhoLTE2MC41di0xMTcuOGg3OS4yem0tMjUyLjMsMzUxLjNjLTI2LjEsMC00OC0yMS45LTQ4LTQ4IDAtMjYuMSAyMS45LTQ4IDQ4LTQ4IDI3LjEsMCA0OCwyMS45IDQ4LDQ4LTAuMSwyNi4xLTIxLjksNDgtNDgsNDh6bTU5LTgwLjJjLTExLjYtMjAuNi0zMy42LTM0LjQtNTktMzQuNC0yNSwwLTQ2LjcsMTMuNC01OC40LDMzLjRoLTQwLjdjLTQuMiwwLTcuMy0zLjEtNy4zLTcuM3YtMzAyLjRjMC00LjIgMy4xLTcuMyA3LjMtNy4zaDI1MS4zdjMxOGgtOTMuMnptMTk4LjUsODAuMmMtMjYuMSwwLTQ4LTIxLjktNDgtNDggMC0yNi4xIDIxLjktNDggNDgtNDhzNDgsMjEuOSA0OCw0OGMwLDI2LjEtMjEuOSw0OC00OCw0OHptNzcuMi04MC4yaC0xOC4xYy0xMS42LTIwLjYtMzMuNi0zNC40LTU5LTM0LjRzLTQ3LjQsMTMuOC01OSwzNC40aC0yNS40di0xMzIuNWgxNjkuOXYxMjQuMWMtMC4xLDQuMi00LjMsOC40LTguNCw4LjR6IiBmaWxsPSIjMDAwMDAwIi8+CiAgICAgIDxwYXRoIGQ9Ik02NC4yLDIwMS44SDI1N3YtODIuNEg2NC4yVjIwMS44eiBNODUsMTQwLjNoMTUyLjJWMTgySDg1VjE0MC4zeiIgZmlsbD0iIzAwMDAwMCIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" />
+                <p class="text-center"><strong>Delivery</strong></p>
+                <p>The delivery can be made through international couriers (UPS, DHL, MBE, EMS, TNT, BTL, Alisped). Before the shipment of goods the buyer will have the possibility to clarify all the delivery details.</p>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive center-block" style="max-height: 150px" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDYxMS45OTYgNjExLjk5NiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNjExLjk5NiA2MTEuOTk2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTg4LjYzLDExMy4xOTNMMjEzLjgxMiwzMy44NzFjLTE1Ljg1OC0zLjM1NS0zMS41NzYsNi44NzYtMzQuOTMxLDIyLjczNGwtNy4xMjEsNDUuNzYybDQzMi40NzcsOTEuNTE5bDcuMTIxLTQ1Ljc2MiAgICBDNjE0LjcxMywxMzIuMjcyLDYwNC40ODgsMTE2LjU0OSw1ODguNjMsMTEzLjE5M3oiIGZpbGw9IiMwMDAwMDAiLz4KCQk8cGF0aCBkPSJNNDMxLjAwOSwyMDMuNTkxYy00LjM3OC0xNS43NjYtMjAuODU0LTI1LjA4NS0zNi42MTUtMjAuNzE0TDMyMy4yNCwyMDIuNjNsLTE2Ny43NDItMzUuNWwtMTguNDQ4LDg3LjE2NUwyMS43ODYsMjg2LjI4NyAgICBjLTE1Ljc2LDQuMzcyLTI1LjA3OSwyMC44NDgtMjAuNzA4LDM2LjYwOWw2NC45NTgsMjM0LjA3OGM0LjM3OCwxNS43NiwyMC44NTUsMjUuMDg1LDM2LjYxNSwyMC43MDhsMzcyLjYwOC0xMDMuNDAzICAgIGMxNS43Ni00LjM3OCwyNS4wNzktMjAuODQ4LDIwLjcwOC0zNi42MTVsLTExLjE1LTQwLjE4NGw0MS43ODksOC44MzVjMTUuODU4LDMuMzYxLDMxLjU3Ni02Ljg3LDM0LjkzMS0yMi43MjhsMjYuNDM5LTEyNC45MzcgICAgTDQzNy40NSwyMjYuNzk3TDQzMS4wMDksMjAzLjU5MXogTTQ3NC4wNCwzMjIuNTU5bDkuMjE1LTQzLjU1MmMxLjM4NC02LjUyMSw3Ljg1LTEwLjcyNywxNC4zNy05LjM1bDQzLjU1Miw5LjIyMSAgICBjNi41MjcsMS4zODQsMTAuNzMzLDcuODQzLDkuMzU2LDE0LjM3bC05LjIxNSw0My41NTJjLTEuMzg0LDYuNTIxLTcuODQ5LDEwLjczMy0xNC4zNyw5LjM1bC00My41NTItOS4yMTUgICAgQzQ3Ni44NjMsMzM1LjU0Niw0NzIuNjU2LDMyOS4wOCw0NzQuMDQsMzIyLjU1OXogTTI4LjI3LDMwOS42NDZsMTAzLjExNS0yOC42MDZsMjQzLjI5OS02Ny41MTdsMjYuMTgxLTcuMjc0ICAgIGMwLjQ3OC0wLjEyOSwwLjk1NS0wLjE5LDEuNDIxLTAuMTljMi4xLDAsNC42MTEsMS4zNzgsNS4zNDUsNC4wMTdsMy4wNzQsMTEuMDdsOS42MzEsMzQuNzA0TDM3LjE0OCwzNjIuMTg2bC0xMi43MDUtNDUuNzY4ICAgIEMyMy42NDcsMzEzLjU0NiwyNS4zOTksMzEwLjQ0MiwyOC4yNywzMDkuNjQ2eiBNNDcyLjYwMSw0NDQuMTQxYzAuNDksMS43NzYtMC4wMjQsMy4yNDUtMC41NDUsNC4xNjQgICAgYy0wLjUxNCwwLjkxOC0xLjUwNiwyLjExOS0zLjI4MiwyLjYwOEw5Ni4xNzMsNTU0LjMxNmMtMC40NzEsMC4xMjktMC45NTUsMC4xOTYtMS40MjEsMC4xOTZjLTIuMSwwLTQuNjExLTEuMzg0LTUuMzQ1LTQuMDIzICAgIEw1MS41MTksNDEzLjk1NWwzODMuMTg4LTEwNi4zNDJsMjMuMzcxLDg0LjIwOEw0NzIuNjAxLDQ0NC4xNDF6IiBmaWxsPSIjMDAwMDAwIi8+CgkJPHBhdGggZD0iTTE1Ni4zNzksNDUzLjQ4NGMtMS43ODgtNi40MjktOC40OTktMTAuMjI1LTE0LjkyOC04LjQ0M2wtNDMuNTE1LDEyLjA4Yy02LjQyMywxLjc4Mi0xMC4yMjUsOC40OTktOC40MzcsMTQuOTI4ICAgIGwxMi4wNzQsNDMuNTA5YzEuNzg4LDYuNDI5LDguNDk5LDEwLjIyNSwxNC45MjgsOC40MzdsNDMuNTE1LTEyLjA3NGM2LjQyOS0xLjc4MiwxMC4yMjUtOC40OTksOC40NDMtMTQuOTI4TDE1Ni4zNzksNDUzLjQ4NHoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" />
+                <p class="text-center"><strong>Payments</strong></p>
+                <p>We accept payments through credit cards (Visa, Master Card, PayPal, American Express) and through bank transfer (data will be given once having finished the order).</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contacts" class="container">
         <div class="sections-header">
             <h3 class="text-uppercase">Where we are</h3>
@@ -422,9 +456,51 @@
             <div class="order">
                 <p class="text-uppercase">Questions? Contact our manager and he will answer them.</p>
                 <p>
-                    <a href="#order">Contact</a>
+                    <a data-toggle="modal" data-target=".orderModal" href="">Contact</a>
                 </p>
                 <p class="small">Our managers will contact you as soon as possible</p>
+                <div id="" class="orderModal modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title text-info">Contacts</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form id="formail" method="post" class="form form-horizontal" action="../mail.php">
+                                    <div class="form-group">
+                                        <label for="nome" class="control-label col-sm-2">Name: </label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" id="nome" name="nome" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="control-label col-sm-2">E-mail:</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" id="email" class="form-control" name="email" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="messaggio" class="control-label col-sm-2">Message:</label>
+                                        <div class="col-sm-10">
+                                            <textarea id="messaggio" name="messaggio" class="form-control" rows="9" cols="20"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <input type="submit" id="invia" name="invia" class="btn btn-default pull-left" value="SUBMIT">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row vertical-align" >
                 <address>
@@ -463,6 +539,8 @@
             </div>
         </div>
     </footer>
+
+
 
     <a href="#" class="top">Top</a>
 
