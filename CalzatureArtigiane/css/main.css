@@ -12,6 +12,9 @@ body {
     .vertical-align {
         flex-direction: column;
     }
+    .vertical-align img {
+        margin: 10px 0;
+    }
 }
 
 .sections-header {
