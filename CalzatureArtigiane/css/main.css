@@ -334,7 +334,7 @@ body {
 @media all and (max-width: 750px) {
     #contacts iframe {
         height: 100%;
-        
+
     }
 }
 
@@ -408,4 +408,8 @@ footer {
     .parallax {
         height: 1000px;
     }
+}
+
+.iti-flag {
+    background-image: url('../img/flags.png');
 }
