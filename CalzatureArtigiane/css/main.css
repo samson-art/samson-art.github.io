@@ -19,13 +19,13 @@ body {
 
 .sections-header {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     margin-top: 30px;
 }
 .sections-header .slide {
     display: inline-block;
-    margin-top: 20px;
-    border: 1px solid #000;
+    margin-top: 5px;
+    border: 1px solid #3c261b;
     border-right-width: 0;
     border-left-width: 0;
     bottom: 30px;
@@ -158,6 +158,7 @@ body {
 }
 .thumbnail {
     background: transparent;
+    border: none;
 }
 
 .thumbnails .thumbnail, .thumbnails .thumbnail:hover {
@@ -166,6 +167,10 @@ body {
 
 .thumbnails .tab-pane {
     padding-top: 40px;
+}
+
+.thumbnail .row {
+    margin-top: 20px;
 }
 
 .thumbnails .tab-content img {
@@ -179,7 +184,7 @@ body {
 
 .nav-tabs {
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -241,7 +246,7 @@ body {
 #order a:hover {
 
 }
-#contacts .order {
+.order {
     border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
     -webkit-border-radius: 5px 5px 5px 5px;
@@ -279,7 +284,7 @@ body {
 }
 
 #bullets img {
-    max-height: 100px;
+    max-height: 50px;
     margin-bottom: 10px;
 }
 
@@ -322,8 +327,15 @@ body {
     width: 100%;
     align-self: stretch;
     padding: 10px 20px;
-    min-height: 200px;
+    height: 300px;
 
+}
+
+@media all and (max-width: 750px) {
+    #contacts iframe {
+        height: 100%;
+        
+    }
 }
 
 /*footer*/
@@ -376,4 +388,24 @@ footer {
 
 .form {
     color: #0f0f0f;
+}
+@font-face {
+    font-family: Devroye; /* Имя шрифта */
+    src: url(../fonts/Devroye/DEVROYE_.ttf); /* Путь к файлу со шрифтом */
+}
+
+.howmade {
+    font-family: Devroye;
+    font-style: italic;
+    color: #3c261b;
+}
+
+.parallax {
+    height: 750px;
+}
+
+@media all and (max-width: 750px) {
+    .parallax {
+        height: 1000px;
+    }
 }
