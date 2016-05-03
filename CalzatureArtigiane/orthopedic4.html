@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="./css/intlTelInput.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-
+<body id="page">
 <div class="toprow">
     <div class="container">
         <div class="container vertical-align">
@@ -57,7 +56,7 @@
                 </div>
                 <div class="collapse navbar-collapse navbar-menubuilder" >
                     <ul class="nav navbar-nav navbar-left" style="font-size: 20px">
-                        <li><a href="./index.html" class="smooth-scroll text-justify">HOME</a>
+                        <li><a href="./index.html#page" class="smooth-scroll text-justify">HOME</a>
                         </li>
                         <li><a href="./company.html#howmade" class="smooth-scroll text-justify">OUR COMPANY</a>
                         </li>
@@ -72,6 +71,7 @@
         </div>
     </div>
 </div>
+
 
 <section id="summary" class="container">
     <div id="carousel-summary" class="carousel slide" data-ride="carousel">
@@ -145,7 +145,7 @@
         <div><a href="./images/scarpa6.jpg" data-lightbox="image-1"><img src="./images/scarpa6.jpg" class="img-responsive"  alt=""></a></div>
     </div>
     <div class="row description">
-        <div class="col-md-6 col-sm-12 text-uppercase">
+        <div class="col-md-6 col-sm-12 text-uppercase wow slideInLeft">
             <p>
                 HANDMADE SHOES
                     <span class="small">
@@ -165,122 +165,33 @@
                 DELIVERY IN ALL EUROPE.
             </p>
         </div>
-        <div class="col-md-6 col-sm-12 media-right">
+        <div class="col-md-6 col-sm-12 media-right wow slideInRight">
             <img src="./images/scarpa.png" alt="" class="img-responsive">
         </div>
     </div>
 </section>
 
-<section id="collections">
-    <div style="background: url('./images/pattern.jpg')!important;">
-        <div class="container">
-            <div class="sections-header text-uppercase">
-                <h3 class="">
-                    Our collection
-                </h3>
-                <div>
-                    <div class="slide wow slideInLeft"></div>
-                    <div class="slide wow slideInRight"></div>
-                </div>
-                <div>
-                    <div class="slide wow slideInLeft" style="margin-bottom: 10px"></div>
-                    <div class="slide wow slideInRight" style="margin-bottom: 10px"></div>
-                </div>
-            </div>
-            <div class="thumbnails">
+<br>
 
-                <ul class="nav nav-tabs text-uppercase text-justify">
-                    <li class="active"><a data-toggle="tab" href="#classic-line"><span>Classic line</span></a></li>
-                    <li><a data-toggle="tab" href="#orthopedic-line">Orthopedic line</a></li>
-                    <li><a data-toggle="tab" href="#height-line">Height increase</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="classic-line" class="tab-pane fade in active">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_classica1.jpg" data-title="Classic collection" data-lightbox="classic" class="thumbnail">
-                                    <img src="./images/scarpa_classica1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_classica2.jpg" data-title="Classic collection" data-lightbox="classic" class="thumbnail">
-                                    <img src="./images/scarpa_classica2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_classica3.jpg" data-title="Classic collection" data-lightbox="classic" class="thumbnail">
-                                    <img src="./images/scarpa_classica3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_classica4.jpg" data-title="Classic collection" data-lightbox="classic" class="thumbnail">
-                                    <img src="./images/scarpa_classica4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="orthopedic-line" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_ortopedica1.jpg" data-title="Orthopedic collection" data-lightbox="orthopedic" class="thumbnail">
-                                    <img src="./images/scarpa_ortopedica1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_ortopedica1.jpg" data-title="Orthopedic collection" data-lightbox="orthopedic" class="thumbnail">
-                                    <img src="./images/scarpa_ortopedica2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_ortopedica1.jpg" data-title="Orthopedic collection" data-lightbox="orthopedic" class="thumbnail">
-                                    <img src="./images/scarpa_ortopedica3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_ortopedica1.jpg" data-title="Orthopedic collection" data-lightbox="orthopedic" class="thumbnail">
-                                    <img src="./images/scarpa_ortopedica4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="height-line" class="tab-pane fade">
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_rialzo1.jpg" data-title="Height increase collection" data-lightbox="height" class="thumbnail">
-                                    <img src="./images/scarpa_rialzo1.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_rialzo2.jpg" data-title="Height increase collection" data-lightbox="height" class="thumbnail">
-                                    <img src="./images/scarpa_rialzo2.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4 col-md-offset-2 col-xs-12">
-                                <a href="./images/scarpa_rialzo3.jpg" data-title="Height increase collection" data-lightbox="height" class="thumbnail">
-                                    <img src="./images/scarpa_rialzo3.jpg" alt="">
-                                </a>
-                            </div>
-                            <div class="col-md-4 col-xs-12">
-                                <a href="./images/scarpa_rialzo4.jpg" data-title="Height increase collection" data-lightbox="height" class="thumbnail">
-                                    <img src="./images/scarpa_rialzo4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section id="product" style="background: url('./images/pattern.jpg')!important;">
+    <div class="container vertical-align">
+        <div class="col-md-6 col-xs-12">
+            <dl class="dl-horizontal">
+                <dt>Product name:</dt>
+                <dd>Orthopedic 1</dd>
+                <dt>Product description:</dt>
+                <dd>
+                    Our orthopedic shoes are designed and made, in order to improve the deambulation and comfort of people. Suitable shoes (major volume) can be used in association to a customized orthotic. In the case in which the shoe has to be used to correct a specific pathology, its use has to be controlled by a specific doctor. Leathers are natural and not treated with prohibited substances. In addition, thanks also to the work of our artisans, the various elements of leathers are innovative and of the latest generation.</dd>
+            </dl>
+        </div>
+        <div class="col-md-6 col-xs-12">
+            <a href="./images/scarpa_ortopedica4.jpg" data-title="Orthopedic collection" data-lightbox="orthopedic">
+                <img src="./images/scarpa_ortopedica4.jpg" alt="" class="img-responsive">
+            </a>
         </div>
     </div>
 </section>
 
-<br>
-<br>
 <section id="calltoaction" data-parallax="scroll" data-image-src="./images/fase7.jpg">
     <div class="container vertical-align">
         <div class="col-md-6 col-sm-12">
@@ -313,7 +224,6 @@
         </div>
     </div>
 </section>
-
 
 <footer class="container">
     <div class="copyright text-center">
@@ -395,8 +305,8 @@
         }
 
         $("#phone").intlTelInput({preferredCountries: ['it', 'gb']});
-        $('.aff').affix({offset: {top: $('.toprow').outerHeight(true)} });
 
+        $('.aff').affix({offset: {top: $('.toprow').outerHeight(true)} });
     });
 
 </script>
