@@ -19,7 +19,13 @@ $(document).ready(function () {
                 company: $('input[name="company"]').val(),
                 target: $('input[name="target"]').val(),
                 email: $('input[name="email"]').val()
-            });
+            })
+                .then(function(response) {
+                    alert("Успешно. Мы свяжемся с Вами.");
+                    location.reload();
+                }, function(err) {
+                    alert("FAILED. error= " + err);
+                });
         } else {
             alert('Неверный email. Попробуйте снова.');
         }
