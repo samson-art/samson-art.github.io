@@ -365,14 +365,11 @@ table th {
   -ms-transform: translateY(-50%) translate(-50%);
   transform: translateY(-50%) translate(-50%);
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 1024px) {
   .modal-content {
-    top: 55%;
-  }
-}
-@media only screen and (max-width: 321px) {
-  .modal-content {
-    top: 87%;
+    top: 0;
+    left: 0;
+    transform: none;
   }
 }
 .modal-overlay {
