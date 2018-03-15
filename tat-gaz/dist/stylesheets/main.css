@@ -1,0 +1,373 @@
+@charset "UTF-8";
+/* for differnt scree sizes  */
+/* colors */
+/* line 41, ../sass/layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 45, ../sass/layout.scss */
+body {
+  /*    fonts for headers and text    */
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0f0f;
+  background: url("../imgs/background.jpg") no-repeat fixed;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+body.modal-active {
+  overflow: hidden;
+}
+/* line 55, ../sass/layout.scss */
+body .content-wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -191px;
+  min-height: 100%;
+  padding: 0 0 191px;
+}
+/* line 62, ../sass/layout.scss */
+body .container .footer-list {
+  margin: 20px 0;
+}
+
+/*      titles    */
+/* line 68, ../sass/layout.scss */
+h1, h2, h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+/*     HEADER STYLES      */
+/* line 87, ../sass/layout.scss */
+header {
+  margin: auto;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 87, ../sass/layout.scss */
+  header {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 87, ../sass/layout.scss */
+  header {
+    width: 90%;
+  }
+}
+/* line 89, ../sass/layout.scss */
+header #header-top {
+  height: auto;
+  padding: 2% 2% 2% 2%;
+  position: relative;
+}
+/* line 93, ../sass/layout.scss */
+header #header-top .contacts {
+  text-align: center;
+}
+/* line 94, ../sass/layout.scss */
+header #header-top .contacts img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 98, ../sass/layout.scss */
+header #header-top .contacts h2, header #header-top .contacts a, header #header-top .contacts a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10%;
+}
+/* line 103, ../sass/layout.scss */
+header #header-top .logo {
+  margin-top: 2%;
+}
+/* line 107, ../sass/layout.scss */
+header #header-top .socials a {
+  margin-left: 2%;
+}
+/* line 112, ../sass/layout.scss */
+header #header-bottom {
+  height: auto;
+  border-bottom: 5px solid #f44336;
+  position: relative;
+}
+/* line 117, ../sass/layout.scss */
+header .navbar, header .navbar-default {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  border-radius: 0;
+  position: relative;
+}
+/* line 125, ../sass/layout.scss */
+header .option {
+  color: black;
+  font-size: 18px;
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 125, ../sass/layout.scss */
+  header .option {
+    font-size: 15px;
+  }
+}
+/* line 132, ../sass/layout.scss */
+header .option:hover, header option:focus, header option:active {
+  color: #f44336;
+  transition: 1000ms;
+}
+
+/*     footer styles     */
+/* line 138, ../sass/layout.scss */
+footer {
+  margin: auto;
+  min-height: 100px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 5px solid #f44336;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 138, ../sass/layout.scss */
+  footer {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 138, ../sass/layout.scss */
+  footer {
+    width: 90%;
+  }
+}
+/* line 144, ../sass/layout.scss */
+footer h3 {
+  text-align: left;
+}
+/* line 147, ../sass/layout.scss */
+footer li {
+  list-style-type: none;
+}
+/* line 150, ../sass/layout.scss */
+footer .footer-row {
+  width: 90%;
+  margin: auto;
+}
+/* line 154, ../sass/layout.scss */
+footer .footer-info, footer a {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 157, ../sass/layout.scss */
+footer .footer-info {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 25, ../sass/main.scss */
+main {
+  /*     CAROUSEL STYLES      */
+  /*        ╨С╨Р╨Ы╨Ы╨Ю╨Э╨л ╨Я╨Ю╨Ф ╨Ъ╨Р╨а╨г╨б╨м╨Х╨Ы╨м╨о      */
+  /*           SIDEBAR           */
+}
+/* line 26, ../sass/main.scss */
+main a {
+  color: black;
+}
+/* line 29, ../sass/main.scss */
+main a:hover, main a:focus, main a:active {
+  text-decoration: none;
+  color: black;
+}
+/* line 33, ../sass/main.scss */
+main .content {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  overflow: hidden;
+  border-top: 5px solid #f44336;
+  border-bottom: 5px solid #f44336;
+  margin: 2% auto;
+  padding-top: 1%;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 33, ../sass/main.scss */
+  main .content {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 33, ../sass/main.scss */
+  main .content {
+    width: 90%;
+  }
+}
+/* line 42, ../sass/main.scss */
+main .content .requisits {
+  text-align: center;
+}
+/* line 44, ../sass/main.scss */
+main .content .requisits button {
+  background-color: #6097ff;
+  color: white;
+}
+/* line 48, ../sass/main.scss */
+main .content .requisits button:active, main .content .requisits button:hover {
+  background-color: #5f85ec;
+  color: white;
+}
+/* line 53, ../sass/main.scss */
+main .content .delivery-info {
+  margin: auto;
+  padding: 3% 8%;
+}
+/* line 56, ../sass/main.scss */
+main .content .delivery-info li, main .content .delivery-info span {
+  display: block;
+}
+/* line 62, ../sass/main.scss */
+main #main-content {
+  margin: auto;
+}
+/* line 69, ../sass/main.scss */
+main .carousel-inner .item img {
+  height: auto;
+  width: 100%;
+}
+/* line 73, ../sass/main.scss */
+main .carousel-inner .item .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 76, ../sass/main.scss */
+main .carousel-inner .item .carousel-text {
+  font-size: small;
+}
+/* line 83, ../sass/main.scss */
+main .balloon-row {
+  margin-top: 2%;
+}
+/* line 85, ../sass/main.scss */
+main .balloon-row .balloon {
+  position: relative;
+  border: 1px solid #E1E1E1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 2%;
+}
+/* line 91, ../sass/main.scss */
+main .balloon-row .balloon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 94, ../sass/main.scss */
+main .balloon-row .balloon p {
+  text-align: center;
+  padding: 5%;
+  margin: auto;
+}
+/* line 100, ../sass/main.scss */
+main .balloon-row .balloon:hover {
+  box-shadow: 0px 2px 5px -1px #000;
+  -moz-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+/* line 107, ../sass/main.scss */
+main #sidebar {
+  border-left: 1px solid rgba(27, 27, 27, 0.23);
+}
+/* line 109, ../sass/main.scss */
+main #sidebar h3 {
+  margin-top: 0;
+}
+/* line 113, ../sass/main.scss */
+main #sidebar aside .col-item {
+  border: 1px solid #E1E1E1;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 117, ../sass/main.scss */
+main #sidebar aside .col-item img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 120, ../sass/main.scss */
+main #sidebar aside .col-item p {
+  text-align: center;
+  padding: 5%;
+  margin: auto;
+}
+/* line 126, ../sass/main.scss */
+main #sidebar aside .col-item:hover {
+  box-shadow: 0px 2px 5px -1px #000;
+  -moz-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-box-shadow: 0px 2px 5px -1px #000;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 133, ../sass/main.scss */
+table {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* line 135, ../sass/main.scss */
+table td {
+  vertical-align: middle !important;
+}
+/* line 138, ../sass/main.scss */
+table td img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 143, ../sass/main.scss */
+table td:hover, table th:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+/* line 146, ../sass/main.scss */
+table th {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* line 153, ../sass/main.scss */
+.table-price td:last-child {
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 800px;
+  max-height: 800px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  /*height: 50%;*/
+}
+.modal-footer {
+  /*left: 0;*/
+  /*bottom: 0;*/
+  /*position: absolute;*/
+  /*width: 100%;*/
+}

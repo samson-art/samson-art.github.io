@@ -1,0 +1,159 @@
+/* for differnt scree sizes  */
+/* colors */
+/* line 41, ../sass/layout.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 45, ../sass/layout.scss */
+body {
+  /*    fonts for headers and text    */
+  font-family: 'Open Sans', sans-serif;
+  color: #0f0f0f;
+  background: url("../imgs/background.jpg") no-repeat fixed;
+  background-size: cover;
+  overflow: auto;
+  overflow-x: hidden;
+}
+/* line 55, ../sass/layout.scss */
+body .content-wrapper {
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -191px;
+  min-height: 100%;
+  padding: 0 0 191px;
+}
+/* line 62, ../sass/layout.scss */
+body .container .footer-list {
+  margin: 20px 0;
+}
+
+/*      titles    */
+/* line 68, ../sass/layout.scss */
+h1, h2, h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+/*     HEADER STYLES      */
+/* line 87, ../sass/layout.scss */
+header {
+  margin: auto;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 87, ../sass/layout.scss */
+  header {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 87, ../sass/layout.scss */
+  header {
+    width: 90%;
+  }
+}
+/* line 89, ../sass/layout.scss */
+header #header-top {
+  height: auto;
+  padding: 2% 2% 2% 2%;
+  position: relative;
+}
+/* line 93, ../sass/layout.scss */
+header #header-top .contacts {
+  text-align: center;
+}
+/* line 94, ../sass/layout.scss */
+header #header-top .contacts img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 98, ../sass/layout.scss */
+header #header-top .contacts h2, header #header-top .contacts a, header #header-top .contacts a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10%;
+}
+/* line 103, ../sass/layout.scss */
+header #header-top .logo {
+  margin-top: 2%;
+}
+/* line 107, ../sass/layout.scss */
+header #header-top .socials a {
+  margin-left: 2%;
+}
+/* line 112, ../sass/layout.scss */
+header #header-bottom {
+  height: auto;
+  border-bottom: 5px solid #f44336;
+  position: relative;
+}
+/* line 117, ../sass/layout.scss */
+header .navbar, header .navbar-default {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0;
+  border-radius: 0;
+  position: relative;
+}
+/* line 125, ../sass/layout.scss */
+header .option {
+  color: black;
+  font-size: 18px;
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 125, ../sass/layout.scss */
+  header .option {
+    font-size: 15px;
+  }
+}
+/* line 132, ../sass/layout.scss */
+header .option:hover, header option:focus, header option:active {
+  color: #f44336;
+  transition: 1000ms;
+}
+
+/*     footer styles     */
+/* line 138, ../sass/layout.scss */
+footer {
+  margin: auto;
+  min-height: 100px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 5px solid #f44336;
+}
+@media only screen and (min-width: 1024px) {
+  /* line 138, ../sass/layout.scss */
+  footer {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 1023px) {
+  /* line 138, ../sass/layout.scss */
+  footer {
+    width: 90%;
+  }
+}
+/* line 144, ../sass/layout.scss */
+footer h3 {
+  text-align: left;
+}
+/* line 147, ../sass/layout.scss */
+footer li {
+  list-style-type: none;
+}
+/* line 150, ../sass/layout.scss */
+footer .footer-row {
+  width: 90%;
+  margin: auto;
+}
+/* line 154, ../sass/layout.scss */
+footer .footer-info, footer a {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 157, ../sass/layout.scss */
+footer .footer-info {
+  margin: 0;
+  padding: 0;
+}
