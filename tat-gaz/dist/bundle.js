@@ -11098,7 +11098,7 @@ var Refill = function (_React$Component) {
 
                 return _react2["default"].createElement(
                     "div",
-                    null,
+                    { className: "container content" },
                     _react2["default"].createElement(
                         "table",
                         { className: "table table-bordered table-responsive table-price" },

@@ -370,6 +370,11 @@ table th {
     top: 55%;
   }
 }
+@media only screen and (max-width: 321px) {
+  .modal-content {
+    top: 87%;
+  }
+}
 .modal-overlay {
   overflow: auto;
   position: fixed;
