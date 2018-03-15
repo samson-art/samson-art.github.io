@@ -11253,8 +11253,10 @@ function DescriptionPopup(props) {
             onRequestClose: closeModal,
             contentLabel: contentLabel,
             shouldCloseOnOverlayClick: false,
-            className: 'modal-content',
-            bodyOpenClassName: 'modal-active'
+            bodyOpenClassName: 'body-modal-active',
+            htmlOpenClassName: 'html-modal-active',
+            overlayClassName: 'modal-overlay',
+            className: 'modal-content'
         },
         _react2['default'].createElement(
             'div',
@@ -11312,6 +11314,24 @@ function DescriptionPopup(props) {
                 )
             ),
             _react2['default'].createElement(
+                'div',
+                { className: 'lead text-center row' },
+                _react2['default'].createElement(
+                    'div',
+                    { className: 'col-sm-12' },
+                    '\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0443:'
+                ),
+                _react2['default'].createElement(
+                    'div',
+                    { className: 'col-sm-12' },
+                    _react2['default'].createElement(
+                        'a',
+                        { href: 'tel:+79944447477' },
+                        '+7 (994) 444 74 77'
+                    )
+                )
+            ),
+            _react2['default'].createElement(
                 'p',
                 { className: 'lead text-center' },
                 '\u0426\u0435\u043D\u0430: ',
@@ -11320,16 +11340,6 @@ function DescriptionPopup(props) {
                     null,
                     item && item.price,
                     '\u0440.'
-                )
-            ),
-            _react2['default'].createElement(
-                'p',
-                { className: 'lead text-center' },
-                '\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C \u043F\u043E \u0442\u0435\u043B\u0435\u0444\u043E\u043D\u0443: ',
-                _react2['default'].createElement(
-                    'a',
-                    { href: 'tel:+79944447477' },
-                    '+7 (994) 444 74 77'
                 )
             )
         ),
