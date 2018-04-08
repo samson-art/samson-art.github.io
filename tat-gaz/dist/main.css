@@ -331,7 +331,7 @@ main #sidebar aside .col-item:hover {
 }
 
 main h1 {
-    margin-top: 0;
+    margin-top: 10px;
     color: #395fab;
 }
 
@@ -464,4 +464,12 @@ table tbody th {
 
 .modal-body .photo {
     padding-bottom: 10px;
+}
+
+.modal-body .lead {
+    margin-bottom: 0px;
+}
+
+.modal-body .lead + .lead {
+    margin-top: 10px;
 }
