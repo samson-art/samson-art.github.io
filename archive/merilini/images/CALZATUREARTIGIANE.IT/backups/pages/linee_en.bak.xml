@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 17 Jun 2015 10:00:35 +0200</pubDate><title><![CDATA[THE SHOE LINES]]></title><url><![CDATA[linee_en]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[THE SHOE LINES]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><content><![CDATA[&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/classica.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;
+			&lt;h4 align=\&quot;left\&quot;&gt;&lt;a href=\&quot;classic_line.php\&quot;&gt;CLASSIC LINE | &lt;strong style=\&quot;color: #900;\&quot;&gt;Let’s see the model&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+			The culture and search for quality have created a fascinating and at the same time elegant product. The hides are of leather, the soles of natural or treated leather. Our mission is to build comfortable shoes, which apart from the design could be also comfortable during the whole day. We have different quality models. The search for details and design has created the most elegant shoe of our classic line.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/rialzo.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;
+			&lt;h4 align=\&quot;left\&quot;&gt;&lt;a href=\&quot;height_increase_line.php\&quot;&gt;HEIGHT INCREASE LINE | &lt;strong style=\&quot;color: #900;\&quot;&gt;Let’s see the model&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+			Our team is qualified in the production of shoes with height increase. By studying the design particularly, we are able to produce models of shoes with +7 and +10 centimeter of increase. The footwear seems to be normal externally. At the same time, thanks to the insertion of internal wedge, it enables the man to be taller in a comfortable way, stretching the body and supporting the posture and back in an invisible way.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/ortopedica.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;
+			&lt;h4 align=\&quot;left\&quot;&gt;&lt;a href=\&quot;orthopedic_line.php\&quot;&gt;ORTHOPEDIC LINE | &lt;strong style=\&quot;color: #900;\&quot;&gt;Let’s see the model&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;
+			Our orthopedic shoes are designed and made, in order to improve the deambulation and comfort of people. Suitable shoes (major volume) can be used in association to a customized orthotic. In the case in which the shoe has to be used to correct a specific pathology, its use has to be controlled by a specific doctor. Leathers are natural and not treated with prohibited substances. In addition, thanks also to the work of our artisans, the various elements of leathers are innovative and of the latest generation.
+			&lt;ul&gt;
+				&lt;li&gt;- The &lt;strong&gt;uppers&lt;/strong&gt; are realized through the use of soft leather or selfshaping elast nappa.&lt;/li&gt;
+				&lt;li&gt;- The &lt;strong&gt;leather lining&lt;/strong&gt; can be padded on the forefoot in order to get the best breathability.&lt;/li&gt;
+				&lt;li&gt;- Micro flexible &lt;strong&gt;Suole&lt;/strong&gt;.&lt;/li&gt;
+				&lt;li&gt;- &lt;strong&gt;Increased volume&lt;/strong&gt; for the insertion of a customized orthopedic insole.&lt;/li&gt;
+				&lt;li&gt;- &lt;strong&gt;Extractable orthopedic insole.&lt;/strong&gt;&lt;/li&gt;
+				&lt;li&gt;- &lt;strong&gt;No friction of the internal lining seam.&lt;/strong&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+]]></content><author><![CDATA[admin]]></author><parent><![CDATA[]]></parent><private><![CDATA[]]></private></item>

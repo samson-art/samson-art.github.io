@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Wed, 17 Jun 2015 10:10:39 +0200</pubDate><title><![CDATA[HOW TO ORDER]]></title><url><![CDATA[ordineacquisto_en]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[HOW TO ORDER]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><content><![CDATA[&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Order&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/ordine.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;To order our artisan shoes, please contact us at the telephone number (+39 0424 75300), send an e-mail or complete the related form in “Contacts” section. We have different models, which can be edited depending on your requirement. As regards the orders, we accept a minimum number of 60 pairs/model/colour. Once having received the order or your request for information, we will contact you within 24/48 hours.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Delivery&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/pagamenti.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;The delivery can be made through international couriers (UPS, DHL, MBE, EMS, TNT, BTL, Alisped). Before the shipment of goods the buyer will have the possibility to clarify all the delivery details.&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;hr /&gt;
+&lt;article class=\&quot;grid_30\&quot;&gt;
+	&lt;h4 align=\&quot;center\&quot;&gt;Payments&lt;/h4&gt;
+	&lt;div class=\&quot;wrapper\&quot;&gt;
+		&lt;figure class=\&quot;img-indent2 frame2\&quot;&gt;
+			&lt;img alt=\&quot;spaccio aziendale\&quot; id=\&quot;img_ordine\&quot; src=\&quot;http://localhost:8888/CMS/calzatureartigiane.it/data/uploads/pagamenti.png\&quot; style=\&quot;width: 160px; height: 160px;\&quot; /&gt;&lt;/figure&gt;
+		&lt;div class=\&quot;extra-wrap2\&quot;&gt;We accept payments through credit cards (Visa, Master Card, PayPal, American Express) and through bank transfer (data will be given once having finished the order).&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/article&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+]]></content><author><![CDATA[admin]]></author><parent><![CDATA[]]></parent><private><![CDATA[]]></private></item>
